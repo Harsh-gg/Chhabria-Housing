@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(255, 255, 247);
+}
+.cont{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}

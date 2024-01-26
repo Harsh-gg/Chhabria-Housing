@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'LuxuryFont';
+  src: url('./fonts/Higuen Serif.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-color: rgb(255, 255, 247);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .title {
+    color: #d2ab67; /* Golden font color */
+    text-align: center;
+    font-size: 3em; /* Adjust the font size as needed */
+    margin-bottom: 70px; /* Add margin for spacing */
+    font-family: "LuxuryFont", sans-serif; /* Specify your luxury font */
+  }
+  .OuterBox {
+    background-color: rgb(255, 255, 247);
+    margin-bottom: 40px;
+  }
+  .wrapper {
+    position: relative;
+    width: 80vw;
+    transform: translate(-50%, 0);
+    top: 0;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .container1 {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 14px;
+    border-radius: 0.5em;
+    background-color: #2F4858;
+    border-bottom: 10px solid #d2ab67;
+  }
+  i {
+    color: #18f98f;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  span.num {
+    color: #f1c477;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+  }
+  span.text {
+    color: #f1c477;
+    font-size: 1.3em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+    font-family: "LuxuryFont", sans-serif;
+  }
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      width: 85vw;
+    }
+    .container1 {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .container1 {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      gap: 15px;
+    }
+    .container1 {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+    }
+  }

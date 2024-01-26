@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'LuxuryFont';
+    src: url('./fonts/Higuen Serif.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.outerm{
+    width: 90%;
+    background-color: #2F4858;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .special{
+    color: rgb(28, 28, 28);
+    font-size: 1em;
+    text-align: center;
+  }
+  .outerm h1{
+    color:#D2AB67;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3em;
+    font-family: "LuxuryFont", sans-serif; /* Specify your luxury font */
+    margin-bottom: 10px;
+  }
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+  .propertyfeatures p{
+    color: rgb(27, 27, 27);
+  }
+  .propertycard {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    border: 1px solid;
+    border-color: #D2AB67;
+  }
+  .propertyimage img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .propertydetails {
+    padding: 20px;
+  }
+  
+  .propertyname {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .propertylocation {
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .propertytype,
+  .propertyprice {
+    margin: 5px 0;
+  }
+  
+  .contactbutton,
+  .explorebutton {
+    background-color: #D2AB67;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .propertydetails .explorebutton {
+    color: #D2AB67;
+    border: 1px solid #D2AB67;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+ .propertydetails a{
+    padding: 0;
+ }
+  
+  @media (max-width: 600px) {
+    .gridcontainer {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  .propertyname {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .propertylocation {
+    font-size: 16px;
+  }
+  
+  .propertyfeatures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .propertytype {
+    font-size: 16px;
+  }
+  
+  .propertyprice {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .contactbutton {
+    background-color: #D2AB67;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .explorebutton {
+    background-color: rgb(255, 255, 247);  
+    color: #D2AB67;
+    border: 2px solid #D2AB67;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }

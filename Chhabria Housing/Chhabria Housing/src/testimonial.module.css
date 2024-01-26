@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'LuxuryFont';
+  src: url('./fonts/Higuen Serif.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+    font-family: 'LuxuryFont', sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 10;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh 
+  }
+  .name{
+    font-family: 'LuxuryFont', sans-serif;
+    font-size: 1.5em;
+    color: #D2AB67;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .testi {
+    width: 80%;
+    background-color: #2F4858;
+    padding: 50px;
+    color: #D2AB67;
+    border-radius: 20px; /* Adjust the border-radius as needed for rounded corners */
+    box-shadow: 10px 14px 28px rgba(0, 0, 0, 0.4);
+    margin-left: 10%;
+  }
+  .outer{
+    background-color: rgb(255, 255, 247);
+  }
+  
+  .testimonialcontain {
+    font-family: 'LuxuryFont', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+    align-items: flex-start; /* Align items to the start of the flex container */
+  }
+  .mess{
+    font-family: 'LuxuryFont', sans-serif;
+    line-height: 1.5em;
+    font-weight: thin;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .testimonialbox {
+    font-family: "LuxuryFont", sans-serif;
+    width: calc(33.33% - 20px); /* Set each box to approximately one-third of the container width */
+    padding: 20px;
+    text-align: center;
+    color: #D2AB67;
+    margin-bottom: 20px; /* Adjust as needed for spacing between boxes */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+  
+  .testimonialbox img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial {
+    text-align: center;
+    font-size: 5ex;
+    color: #D2AB67;
+    font-family: "LuxuryFont", sans-serif;
+  }
+  
+  .head {
+    text-align: center;
+    color: #D2AB67;
+    font-family: "LuxuryFont", sans-serif;
+    font-size: large;
+    margin: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .testimonialbox {
+      width: 90%; /* Set to full width on smaller screens */
+      margin: 10px;
+    }
+  
+    .testi {
+      width: 90%; /* Adjust the width for smaller screens */
+      margin-left: 5%;
+    }
+  }
