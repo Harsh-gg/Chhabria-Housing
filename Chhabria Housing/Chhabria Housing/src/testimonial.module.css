@@ -24,15 +24,11 @@ body {
 
   .testi {
     width: 80%;
-    background-color: #2F4858;
+    background-color: #343A40;
     padding: 50px;
-    color: #D2AB67;
     border-radius: 20px; /* Adjust the border-radius as needed for rounded corners */
     box-shadow: 10px 14px 28px rgba(0, 0, 0, 0.4);
     margin-left: 10%;
-  }
-  .outer{
-    background-color: rgb(255, 255, 247);
   }
   
   .testimonialcontain {
@@ -49,6 +45,7 @@ body {
     font-weight: thin;
     margin-bottom: 10px;
     text-align: center;
+    color: #CDD5DC;
   }
 
   .testimonialbox {

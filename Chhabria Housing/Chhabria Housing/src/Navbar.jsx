@@ -2,7 +2,7 @@ import React from "react";
 import css from "./Navbar.module.css";
 import logo from "./assets/logo trans.png";
 
-export default function Navbar() {
+export default function Navbar({openPopup}) {
     return(
         <>
             <div className={css.topnav} id={css.myTopnav}> 
@@ -23,7 +23,6 @@ export default function Navbar() {
               </div> 
               <div className={css.dropdownn}>
                   <button className={css.dropbtnn}>Commercial▾
-                      
                   </button>
                     <div className={css.dropdowncontentn}>
                         <a href="#">North</a>
@@ -35,7 +34,7 @@ export default function Navbar() {
       <a href="#testimonialss">Our Testimonials</a>
       <a href="#news">About Us</a>
       <a href="#about">Join Us</a>
-      <a href="#contact">Contact Us</a>
+      <a href="#contact" onClick={openPopup}>Contact Us</a>
       
   </div>
 </div>

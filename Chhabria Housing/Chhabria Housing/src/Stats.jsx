@@ -76,6 +76,7 @@ function Stats() {
     <div className={StatsCSS.OuterBox}>
       <h1 className={StatsCSS.title}>Success Stories</h1>
       <div ref={statsRef} className={StatsCSS.wrapper}>
+        <div className={StatsCSS.containerr}>
         <div className={StatsCSS.container1}>
           <i></i>
           <span className={StatsCSS.num}>{formatNumberWithPlus(mealsDelivered)}</span>
@@ -95,6 +96,10 @@ function Stats() {
           <i></i>
           <span className={StatsCSS.num}>{formatNumberWithPlus(fiveStars)}</span>
           <span className={StatsCSS.text}>Satisfied Clients</span>
+        </div>
+        </div>
+        <div className={StatsCSS.containerr2}>
+          <img src="src\assets\untitled design.png" alt="mumbai map"/>
         </div>
       </div>
       </div>

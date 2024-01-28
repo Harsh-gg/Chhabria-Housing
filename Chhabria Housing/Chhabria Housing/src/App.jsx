@@ -9,6 +9,7 @@ import Testimonial from './Testimonial.jsx';
 import Contact from './Contact.jsx';
 import Projsection from './Projsection.jsx';
 import './App.css';
+import Aboutsec from './aboutsec.jsx';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -26,10 +27,11 @@ function App() {
   return (
     <>
       <div className='cont'>
-      <Navbar />
+      <Navbar openPopup={openPopup}/>
       <Caro/>
       <AutoplayCarousel />
       <Projsection openPopup={openPopup}/>
+      <Aboutsec/>
       <Stats />
       <Testimonial id='testimonialss'/>
       {isPopupOpen && <Popup closePopup={closePopup} />}

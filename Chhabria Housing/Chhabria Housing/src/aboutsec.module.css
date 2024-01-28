@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'LuxuryFont';
+    src: url('./Higuen Serif.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.title2 h1{
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-family: 'LuxuryFont';
+    font-size: 50px;
+}
+.whole2{
+    background-color: #343A40 ;
+    color: #D2AB67 ;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 3%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.approachcontainer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Adjust the height as needed */
+    overflow: hidden;
+    text-align: center;
+}
+
+.txt2 p{
+    text-align: justify;
+    color: #CDD5DC;
+    font-size: 22px;
+    line-height: 1.8;
+    font-family: 'LuxuryFont';
+}
+.subheader2, .sub22 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'LuxuryFont';
+}
+
+.two2{
+    margin-top: 80px;
+}
+.one2, .two2 {
+    flex: 1;
+}
+.two2, .one2{
+    text-align: center;
+    flex: 1;
+}
+@media screen and (max-width: 768px) {
+    .approachcontainer2 {
+        flex-direction: column;
+        height: auto;
+    }
+    .one2, .two2{
+        text-align: center; /* Align text to the center on smaller screens */
+    }
+    .two2 {
+        margin-top: 50px;
+    }
+    .text2 p{
+        font-size: 16px;
+    }
+}
