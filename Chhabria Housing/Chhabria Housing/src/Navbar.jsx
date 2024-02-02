@@ -1,43 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import css from "./Navbar.module.css";
 import logo from "./assets/logo trans.png";
+import { Link } from "react-router-dom";
 
-export default function Navbar({openPopup}) {
-    return(
-        <>
-            <div className={css.topnav} id={css.myTopnav}> 
-    <img id={css.logo} src={logo} alt="logo" />
-    <div id={css.whole}>
-      <div className={css.dropdown}>
-          <button id={css.abhinav} className={css.dropbtn}>
-            Projects▾    
-          </button>
-          <div className={css.dropdowncontent}>
-              <div className={css.dropdownn}>
-                  <button className={css.dropbtnn}>Residential▾
-                  </button>
-                  <div className={css.dropdowncontentn}>
-                      <a href="#">North</a>
-                      <a href="#">South</a>
-                  </div>
-              </div> 
-              <div className={css.dropdownn}>
-                  <button className={css.dropbtnn}>Commercial▾
-                  </button>
-                    <div className={css.dropdowncontentn}>
-                        <a href="#">North</a>
-                        <a href="#">South</a>
-                    </div>
-              </div> 
+export default function Navbar({ openPopup }) {
+  const [isResponsive, setIsResponsive] = useState(false);
+  const [isProjectsDropdownOpen, setIsProjectsDropdownOpen] = useState(false);
+
+  const toggleResponsive = () => {
+    setIsResponsive((prev) => !prev);
+  };
+
+  const toggleProjectsDropdown = () => {
+    setIsProjectsDropdownOpen((prev) => !prev);
+  };
+
+  return (
+    <>
+      <div className={`${css.topnav} ${isResponsive ? css.responsive : ""}`}>
+        <Link to="/">
+          <img id={css.logo} src={logo} alt="logo" />
+        </Link>
+        <div id={css.whole}>
+          <div className={css.burgerIcon} onClick={toggleResponsive}>
+            ☰
           </div>
-      </div> 
-      <a href="#testimonialss">Our Testimonials</a>
-      <a href="#news">About Us</a>
-      <a href="#about">Join Us</a>
-      <a href="#contact" onClick={openPopup}>Contact Us</a>
-      
-  </div>
-</div>
-        </>
-    )
+          <div className={css.menuItems}>
+            <div className={css.dropdown} onClick={toggleProjectsDropdown}>
+              <button id={css.abhinav} className={css.dropbtn}>
+                Projects▾
+              </button>
+              {/* Conditional rendering for the Projects dropdown */}
+              {isProjectsDropdownOpen && (
+                <div className={css.dropdowncontent}>
+                  <div className={css.dropdownn}>
+                    <button className={css.dropbtnn}>Residential</button>
+                  </div>
+                  <div className={css.dropdownn}>
+                    <button className={css.dropbtnn}>Commercial</button>
+                  </div>
+                </div>
+              )}
+            </div>
+            <Link to="#contact" onClick={openPopup}>
+              Contact Us
+            </Link>
+            <Link to="#testimonialss">Our Testimonials</Link>
+            <Link to="#about">About Us</Link>
+            <Link to="/join">Join Us</Link>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

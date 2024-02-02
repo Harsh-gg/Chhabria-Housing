@@ -19,8 +19,24 @@
     padding-bottom: 3%;
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
 }
-
+.txt2 ul {
+    list-style-type: disc;
+    padding-left: 20px; 
+    line-height: 3; 
+    text-align: left;
+    font-family: 'LuxuryFont';
+  }
+.txt2 li{
+    font-size: 20px;
+    font-family: 'LuxuryFont';
+    font-size: 20px;
+}
 .approachcontainer2 {
     display: flex;
     align-items: center;
@@ -30,13 +46,6 @@
     text-align: center;
 }
 
-.txt2 p{
-    text-align: justify;
-    color: #CDD5DC;
-    font-size: 22px;
-    line-height: 1.8;
-    font-family: 'LuxuryFont';
-}
 .subheader2, .sub22 {
     font-size: 24px;
     font-weight: bold;
@@ -54,18 +63,46 @@
     text-align: center;
     flex: 1;
 }
-@media screen and (max-width: 768px) {
-    .approachcontainer2 {
-        flex-direction: column;
-        height: auto;
+@media screen and (max-width: 767px) {
+    .title2 h1 {
+        font-size: 36px; /* Adjust the font size for mobile */
     }
-    .one2, .two2{
-        text-align: center; /* Align text to the center on smaller screens */
+
+    .whole2 {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
-    .two2 {
-        margin-top: 50px;
+
+    .txt2 p {
+        font-size: 18px; /* Adjust the font size for mobile */
     }
-    .text2 p{
-        font-size: 16px;
+
+    .subheader2, .sub22 {
+        font-size: 20px; /* Adjust the font size for mobile */
     }
+}
+@media screen and (max-width: 575px) {
+    .title2 h1 {
+        font-size: 28px; /* Adjust the font size for mobile */
+    }
+
+    .whole2 {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .txt2 li {
+        font-size: 16px; /* Adjust the font size for mobile */
+    }
+
+    .subheader2, .sub22 {
+        font-size: 20px; /* Adjust the font size for mobile */
+    }
+    
 }

@@ -1,9 +1,13 @@
 .topnav {
     position: absolute;
-    z-index: 200; /* Set a higher z-index value to ensure it appears on top */
+    z-index: 200; 
     overflow: visible;
     background-color: transparent;
     font-size: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 20px 20px;
 }
 #abhinav{
   font-size: 22px;
@@ -21,7 +25,6 @@
 }
 
 .topnav .icon {
-  display: none;
   z-index: 200;
 }
 
@@ -38,10 +41,19 @@
   position: relative;
 
 }
-#whole{
+
+.whole {
   display: flex;
-  justify-content: right;  
+  justify-content: flex-end; 
+  align-items: center; 
+  flex-grow: 1; 
   z-index: 200;
+}
+.logo {
+  max-width: 120px;
+  max-height: 120px;
+  float: left; 
+  margin-right: auto; 
 }
 
 .dropdown .dropbtn {
@@ -225,4 +237,39 @@
   max-height: 120px;
   float: left; 
 }
+.burgerIcon{
+  display: none;
+}
 
+@media screen and (max-width: 768px) {
+  .topnav {
+    flex-direction: row; /* Stack items vertically on smaller screens */;
+    padding: 0;
+    background-color: #555;
+  }
+
+  .burgerIcon {
+    display: block; /* Show the burger icon on smaller screens */
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+  }
+  .burgerIcon:hover{
+    background-color: #555;
+  }
+  .menuItems {
+    display: none; /* Hide the menu items by default on smaller screens */
+  }
+
+  /* Show the menu items when the responsive state is active */
+  .responsive .menuItems {
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdowncontent{
+    display: hidden;
+    flex-direction: column;
+    position: relative;
+  }
+}

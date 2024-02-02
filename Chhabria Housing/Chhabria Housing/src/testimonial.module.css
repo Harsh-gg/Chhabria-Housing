@@ -79,14 +79,23 @@ body {
     margin: 10px;
   }
   
-  @media screen and (max-width: 600px) {
-    .testimonialbox {
-      width: 90%; /* Set to full width on smaller screens */
-      margin: 10px;
-    }
-  
-    .testi {
-      width: 90%; /* Adjust the width for smaller screens */
-      margin-left: 5%;
-    }
+@media screen and (max-width: 900px) {
+  .testimonialbox {
+    width: 90%; /* Set to full width on smaller screens */
+    margin: 10px;
   }
+
+  .testi {
+    width: 90%; /* Adjust the width for smaller screens */
+    margin-left: 5%;
+  }
+
+  .testimonialcontain {
+    flex-direction: column; /* Stack testimonials in a column on smaller screens */
+    align-items: center; /* Center items on smaller screens */
+  }
+
+  .testimonialbox {
+    width: 100%; /* Set each box to full width on smaller screens */
+  }
+}
