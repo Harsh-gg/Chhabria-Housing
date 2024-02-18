@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import  css from"./Popup.module.css";
 import email from "./assets/email.png";
 import location from "./assets/location.png";
@@ -8,7 +8,56 @@ export default function Popup({ closePopup }) {
   const handleClose = () => {
     closePopup();
     document.body.style.overflow = "auto";
-  };  
+  };
+
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  let name,value;
+  const postUserData = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+    setUserData({ ...userData, [name]: value });
+  };
+  
+  const submitData = async (e) => {
+    e.preventDefault();
+    const { name, email, phone, message } = userData;
+    if (name && email && phone && message) {
+      const res = await fetch(
+        "https://chhabria-housing-default-rtdb.firebaseio.com/Enquiries.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            phone,
+            message,
+          }),
+        }
+      );
+
+      if (res) {
+        setUserData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        alert("Data Stored");
+      }
+    } else {
+      alert("Please fill all the fields");
+    }
+  };
+
   return(
         <>
         <div className={css.backdrop0}></div>
@@ -35,25 +84,22 @@ export default function Popup({ closePopup }) {
               </div>
             </div>
             <div className={css.contactform0}>
-              <form action="index.html" autocomplete="off">
+              <form action="index.html" autocomplete="off" method="POST">
                 <h3 className={css.title0}>Contact us</h3>
                 <div className={css.inputcontainer0}>
-                  <input type="text" name="name" className={css.input0} placeholder="Name"/>
-                  <span>Username</span>
+                  <input type="text" name="name" className={css.input0} placeholder="Name" value={userData.name} onChange={postUserData}/>
                 </div>
                 <div className={css.inputcontainer0}>
-                  <input type="email" name="email" placeholder="Email" className={css.input0} />
-                  <span>Email</span>
+                  <input type="email" name="email" placeholder="Email" className={css.input0} value={userData.email} onChange={postUserData}/>
                 </div>
                 <div className={css.inputcontainer0}>
-                  <input type="tel" name="phone" className={css.input0} placeholder="Phone"/>
-                  <span>Phone</span>
+                  <input type="tel" name="phone" className={css.input0} placeholder="Phone" value={userData.phone} onChange={postUserData}/>
                 </div>
                 <div className={css.inputcontainertextarea0}>
-                  <textarea name="message" className={css.input0} placeholder="Messasge"></textarea>
+                  <textarea name="message" className={css.input0} placeholder="Messasge" value={userData.message} onChange={postUserData}></textarea>
                 </div>
                 <div className={css.buttonss}>
-                  <input type="submit" value="Send" className={css.btn0} />
+                  <input type="submit" value="Send" className={css.btn0}  onClick={submitData}/>
                   <input type="button" value="Close" className={css.btn0} onClick={handleClose}/>
                 </div>
               </form>
