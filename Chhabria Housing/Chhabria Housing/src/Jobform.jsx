@@ -1,57 +1,71 @@
 import React,{useState} from 'react'
 import css from './jobform.module.css'
+// import {storage} from '../Config';
+// import { ref, uploadBytes } from 'firebase/storage';
 
 export default  function Jobform() {
   const [userData, setUserData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-    position: "",
-    resume: null,
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+    position: '',
+    // resume: null,
   });
-  let name,value;
-  const postUserData = (e) => {
-    name = e.target.name;
-    value = e.target.value;
-    setUserData({ ...userData, [name]: value });
-  };
 
+  const postUserData = (e) => {
+    const { name, value } = e.target;
+    setUserData({ ...userData, [name]: value.trim() }); // Ensure trimming for consistency
+  };
+  
   const submitData = async (e) => {
     e.preventDefault();
-    const { name, email, phone, message, position, resume } = userData;
-    if (name && email && phone && message && position && resume) {
-      const res = await fetch(
-        "https://chhabria-housing-default-rtdb.firebaseio.com/JobApplications.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            phone,
-            message,
-            position,
-            resume,
-          }),
-        }
-      );
 
-      if (res) {
-        setUserData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-          position: "",
-          resume: null,
-        });
-        alert("Data Stored");
+    const { name, email, phone, message, position} = userData;
+
+    if (name.trim() && email.trim() && phone.trim() && message.trim() && position) {
+      try {
+        // const resumeRef = ref(storage, `Resumes/${resume.name}`);
+        // await uploadBytes(resumeRef, resume);
+
+        // const resumeUrl = await resumeRef.getDownloadURL();
+
+        // Submit form data with resume URL
+        const res = await fetch(
+          "https://chhabria-housing-default-rtdb.firebaseio.com/JobApplications.json",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name,
+              email,
+              phone,
+              message,
+              position,
+              // resume: resumeUrl,
+            }),
+          }
+        );
+
+        if (res) {
+          setUserData({
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+            position: '',
+            // resume: null,
+          });
+          alert('Data Stored');
+        }
+      } catch (error) {
+        console.error('Error uploading resume or submitting data:', error);
+        alert('An error occurred. Please try again later.');
       }
     } else {
-      alert("Please fill all the fields");
+      alert('Please fill all the fields');
     }
   };
     return (
@@ -83,8 +97,8 @@ export default  function Jobform() {
               <option value="development">Development</option>
             </select>
 
-            <label for="resume" className={css.label2}>Upload Resume</label>
-            <input type="file" id={css.resume} name="resume" value={userData.resume} onChange={postUserData} accept=".pdf,.doc,.docx" />
+            {/* <label for="resume" className={css.label2}>Upload Resume</label>
+            <input type="file" id={css.resume} name="resume" value={userData.resume} onChange={postUserData} accept=".pdf,.doc,.docx" /> */}
 
             <button className={css.submit2} type="submit" onClick={submitData}>Submit</button>
           </form>
