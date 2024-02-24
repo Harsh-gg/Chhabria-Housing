@@ -24,13 +24,18 @@
     margin-right: auto;
     border-radius: 20px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
+    
 }
+
 .txt2 ul {
     list-style-type: disc;
     padding-left: 20px; 
-    line-height: 3; 
+    line-height: 30px; 
     text-align: left;
     font-family: 'LuxuryFont';
+    line-height: 40px;
+    letter-spacing: 1px;
+    
   }
 .txt2 li{
     font-size: 20px;
@@ -67,6 +72,14 @@
     .title2 h1 {
         font-size: 36px; /* Adjust the font size for mobile */
     }
+    .txt2 ul{
+        letter-spacing: 1px;
+        line-height: 25px;
+
+    }
+    .txt2 li{
+        line-height: 25px;
+    }
 
     .whole2 {
         padding-left: 5%;
@@ -97,8 +110,11 @@
         margin-bottom: 15px;
     }
 
+
     .txt2 li {
-        font-size: 16px; /* Adjust the font size for mobile */
+        font-size: 16px;
+        
+        /* Adjust the font size for mobile */
     }
 
     .subheader2, .sub22 {
