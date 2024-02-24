@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './Navbar.jsx';
 import Popup from './Popup';
 import Join from './Pages/Join.jsx';
+import Privacypolicy from './Pages/Privacypolicy.jsx';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/join" element={<Join/>} />
+        <Route path="/privacy-policy" element={<Privacypolicy/>} />
       </Routes>
     </>
   );

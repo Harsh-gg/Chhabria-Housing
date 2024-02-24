@@ -28,7 +28,7 @@ export default function Foot() {
             <div>
               <Footer.Title title="Legal" style={{ color: '#D2AB67', marginLeft: '45px' }} />
               <Footer.LinkGroup col>
-                <Footer.Link href="#" style={{ color: '#f1c477', marginBottom: '10px' }}>Privacy Policy</Footer.Link>
+                <Footer.Link href="/privacy-policy" style={{ color: '#f1c477', marginBottom: '10px' }}>Privacy Policy</Footer.Link>
                 <Footer.Link href="#" style={{ color: '#f1c477', marginBottom: '10px' }}>Terms &amp; Conditions</Footer.Link>
               </Footer.LinkGroup>
             </div>

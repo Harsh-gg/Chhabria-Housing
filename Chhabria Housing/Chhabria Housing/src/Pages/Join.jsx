@@ -5,11 +5,12 @@ import Foot from '../Footer'
 import Why from '../Why'
 import Jobform from '../jobform'
 import '../App.css'
+import image from '../assets/Join Our Team.png';
 
 function Join() {
   return (
     <div>
-      <Hero />
+      <Hero  img={image}/>
       <Why/>
       <Jobform/>
       <Aboutsec/>

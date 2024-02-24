@@ -31,16 +31,16 @@
 }
 
 .carousel-card > img {
-  height: 100%;
-  width: 100%; /* Use 100% width for the image */
+  height: 200px;
+  width: 200px; /* Use 100% width for the image */
   object-fit: contain;
   border-radius: 20%;
 }
 
 @media (max-width: 600px) {
   .carousel-card > img {
-    width: 100%; /* Adjust the width for smaller screens */
-    max-width: 200px; /* Set a maximum width to avoid images becoming too small */
+    width: 150%; /* Adjust the width for smaller screens */
+    min-width: 150px /* Set a maximum width to avoid images becoming too small */
   }
 }
 

@@ -81,7 +81,7 @@
     text-shadow: 0 0 5px #f1c477, 0 0 10px #f1c477, 0 0 15px #f1c477;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     .wrapper {
       width: 85vw;
     }
@@ -98,8 +98,10 @@
   @media screen and (max-width: 768px) {
     .wrapper {
       width: 90vw;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
+      justify-content: center;
     }
     .container1 {
       /* width: calc(50% - 40px);  */
@@ -121,6 +123,7 @@
   @media screen and (max-width: 480px) {
     .wrapper {
       gap: 15px;
+      display: flex;
     }
     .container1 {
       width: 100%;

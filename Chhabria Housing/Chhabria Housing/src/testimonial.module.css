@@ -9,8 +9,6 @@ body {
     background-color: #f4f4f4;
     margin-top: 10;
     padding: 0;
-    display: flex;
-    justify-content: center;
     align-items: flex-start;
     height: 100vh 
   }

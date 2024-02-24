@@ -98,18 +98,7 @@ function Stats() {
           <span className={StatsCSS.text}>Satisfied Clients</span>
         </div>
         </div>
-        <div className={StatsCSS.placescontainer}>
-            <div className={StatsCSS.placeslist}>
-                <h2>List of Places</h2>
-                <ul>
-                    <li>Andheri</li>
-                    <li>Ville Parle</li>
-                    <li>Parel</li>
-                    <li>Ghatkoper</li>
-                    <li>Mulund</li>
-                </ul>
-            </div>
-          </div>
+    
 
         <div className={StatsCSS.containerr2}>
           <img src="src\assets\untitled design.png" alt="mumbai map"/>

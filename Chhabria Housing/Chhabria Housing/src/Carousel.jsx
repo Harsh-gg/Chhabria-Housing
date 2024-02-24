@@ -5,13 +5,39 @@ import img3 from './assets/home3.png';
 
 export default function Caro() {
   return (
-    <div className="w-full h-screen overflow-hidden">
-      {/* An immersive canvas where every pixel tells a tale */}
-      <Carousel className="w-full h-full">
-        {/* Let each image unfold its full splendor */}
-        <img src={img1} alt="Discover the allure of your dream home." className="w-full h-full object-cover" />
-        <img src={img2} alt="Unveil the elegance that awaits you." className="w-full h-full object-cover" />
-        <img src={img3} alt="Experience the epitome of luxurious living." className="w-full h-full object-cover" />
+    <div className="w-full h-full sm:h-full md:h-full lg:h-full xl:h-full 2xl:h-full overflow-x-hidden">
+      <Carousel className="w-full h-full max-h-[80vh] min-h-[30vh]">
+        {/* Apply responsive sizing to images using inline styles and media queries */}
+        <img
+          src={img1}
+          alt="Discover the allure of your dream home."
+          className="w-full h-full object-cover max-w-[100%] max-h-[100%]"
+          style={{
+            width: '100%',
+            height: 'auto',
+            objectFit: 'cover',
+          }}
+        />
+        <img
+          src={img2}
+          alt="Unveil the elegance that awaits you."
+          className="w-full h-full object-cover max-w-[100%] max-h-[100%]"
+          style={{
+            width: '100%',
+            height: 'auto',
+            objectFit: 'cover',
+          }}
+        />
+        <img
+          src={img3}
+          alt="Experience the epitome of luxurious living."
+          className="w-full h-full object-cover max-w-[100%] max-h-[100%]"
+          style={{
+            width: '100%',
+            height: 'auto',
+            objectFit: 'cover',
+          }}
+        />
       </Carousel>
     </div>
   );

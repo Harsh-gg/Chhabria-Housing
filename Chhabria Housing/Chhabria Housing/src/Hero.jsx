@@ -3,12 +3,12 @@ import image from './assets/Join Our Team.png';
 import HeroCSS from './Hero.module.css';
 
 
-export default function Hero() {
+export default function Hero(props) {
   return (
     <>
       <div id={HeroCSS.Container}>
         <div id={HeroCSS.container}>
-          <img src={image} alt="Joinus"/>
+          <img src={props.img} alt="Joinus"/>
         </div>
       </div>
     </>
