@@ -29,9 +29,9 @@ function Home() {
       <Caro/>
       <AutoplayCarousel />
       <Projsection openPopup={openPopup}/>
-      <Aboutsec/>
+      <div id='about'><Aboutsec/></div>
       <Stats />
-      <div id='testimonialss'><Testimonial/></div>
+      <div id='testimonials'><Testimonial/></div>
       {isPopupOpen && <Popup closePopup={closePopup} />}
       <Contact openPopup={openPopup}/>
       <Foot />

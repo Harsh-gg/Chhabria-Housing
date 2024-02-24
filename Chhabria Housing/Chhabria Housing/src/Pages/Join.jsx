@@ -13,7 +13,7 @@ function Join() {
       <Hero  img={image}/>
       <Why/>
       <Jobform/>
-      <Aboutsec/>
+      <div id='about' ><Aboutsec/></div>
       <Foot/>
     </div>
   )

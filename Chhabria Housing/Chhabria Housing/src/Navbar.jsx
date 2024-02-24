@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import css from "./Navbar.module.css";
 import logo from "./assets/logo trans.png";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 
 export default function Navbar({ openPopup }) {
+  
   const [isResponsive, setIsResponsive] = useState(false);
   const [isProjectsDropdownOpen, setIsProjectsDropdownOpen] = useState(false);
 
@@ -14,7 +17,7 @@ export default function Navbar({ openPopup }) {
   const toggleProjectsDropdown = () => {
     setIsProjectsDropdownOpen((prev) => !prev);
   };
-
+  
   return (
     <>
       <div className={`${css.topnav} ${isResponsive ? css.responsive : ""}`}>
@@ -45,8 +48,8 @@ export default function Navbar({ openPopup }) {
             <Link to="#contact" onClick={openPopup}>
               Contact Us
             </Link>
-            <Link to="#testimonialss">Our Testimonials</Link>
-            <Link to="#about">About Us</Link>
+            <HashLink to="#testimonials">Our Testimonials</HashLink>
+            <HashLink to="#about">About Us</HashLink>
             <Link to="/join">Join Us</Link>
           </div>
         </div>

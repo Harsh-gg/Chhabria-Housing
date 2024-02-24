@@ -18,6 +18,7 @@
     font-size: 3em; /* Adjust the font size as needed */
     margin-bottom: 50px; 
     font-family: "LuxuryFont", sans-serif; 
+    margin-top: -10%;
 }
 
 .carousel-card {
@@ -44,10 +45,25 @@
   }
 }
 
+@media (max-width: 425px) {
+  .carousel-card > img {
+    width: 150%; /* Adjust the width for smaller screens */
+    min-width: 150px /* Set a maximum width to avoid images becoming too small */
+  }
+  .head{
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-top: -30%;
+  }
+}
+
 @media (max-width: 768px) {
   .carousel-card > img {
     width: 150%; /* Adjust the width for smaller screens */
     min-width: 150px /* Set a maximum width to avoid images becoming too small */
+  }
+  .head{
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-top: -20%;
   }
 }
 
