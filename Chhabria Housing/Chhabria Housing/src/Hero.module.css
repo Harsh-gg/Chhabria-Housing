@@ -3,15 +3,21 @@
     height: auto;
     position: relative;
 }
+
+@media screen and (max-width: 700px) {
+    #container{
+        padding-top: 100px;
+}
+}
 #text{
     position: absolute;
     z-index: 1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the text within the container */
-    color: white; /* Assuming you want white text for better visibility */
-    text-align: center; /* Optional: Center the text horizontally */
-    background-color: rgba(0, 0, 0, 0.5); /* Assuming you want a black background color */
+    transform: translate(-50%, -50%); 
+    color: white; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
     font-family: 'Roboto Mono', monospace;
     font-weight: 200;
     padding-left: 50px;

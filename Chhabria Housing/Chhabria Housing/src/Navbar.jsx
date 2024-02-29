@@ -37,19 +37,19 @@ export default function Navbar({ openPopup }) {
               {isProjectsDropdownOpen && (
                 <div className={css.dropdowncontent}>
                   <div className={css.dropdownn}>
-                    <button className={css.dropbtnn}>Residential</button>
+                    <Link to="/residential"><button className={css.dropbtnn}>Residential</button></Link>
                   </div>
                   <div className={css.dropdownn}>
-                    <button className={css.dropbtnn}>Commercial</button>
+                    <Link to="/commertial"><button className={css.dropbtnn}>Commercial</button></Link>
                   </div>
                 </div>
               )}
+              <Link to="/about">About Us</Link>
             </div>
             <Link to="#contact" onClick={openPopup}>
               Contact Us
             </Link>
             <HashLink to="#testimonials">Our Testimonials</HashLink>
-            <HashLink to="#about">About Us</HashLink>
             <Link to="/join">Join Us</Link>
           </div>
         </div>

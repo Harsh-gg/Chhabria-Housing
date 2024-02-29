@@ -6,6 +6,9 @@ import Navbar from './Navbar.jsx';
 import Popup from './Popup';
 import Join from './Pages/Join.jsx';
 import Privacypolicy from './Pages/Privacypolicy.jsx';
+import Commertial from './Pages/commertial.jsx';
+import Residential from './Pages/residential.jsx';
+import About from './Pages/About.jsx';
 
 
 function App() {
@@ -28,6 +31,9 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/join" element={<Join/>} />
         <Route path="/privacy-policy" element={<Privacypolicy/>} />
+        <Route path='/commertial' element={<Commertial/>}/>
+        <Route path='/residential' element={<Residential/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
     </>
   );
