@@ -44,11 +44,13 @@ export default function Navbar({ openPopup }) {
                   </div>
                 </div>
               )}
+              <Link to="/about">About Us</Link>
             </div>
-            <Link to="#contact" onClick={openPopup}>Contact Us</Link>
+            <Link to="#contact" onClick={openPopup}>
+              Contact Us
+            </Link>
             <HashLink to="#testimonials">Our Testimonials</HashLink>
             <Link to="/join">Join Us</Link>
-            <Link to="/about">About Us</Link>
           </div>
         </div>
       </div>
