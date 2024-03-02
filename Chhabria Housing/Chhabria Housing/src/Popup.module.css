@@ -211,6 +211,7 @@ textarea.input0 {
 }
 .information0 p{
   color: #28616A;
+  font-size: 0.9rem;
 }
 
 .icon0 {
@@ -268,10 +269,10 @@ textarea.input0 {
 
 @media (max-width: 480px) {
   .container0 {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
-  .contactinfo0:before {
+  .contactinfo0 .text0 {
     display: none;
   }
 
@@ -282,17 +283,17 @@ textarea.input0 {
 
   .form0,
   .contactinfo0 {
-    padding: 1.7rem 1.6rem;
+    padding: 1rem 1rem;
   }
 
   .text0,
   .information0,
   .socialmedia p {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 
   .title0 {
-    font-size: 1.15rem;
+    display: none;
   }
 
   .socialicons a {
@@ -310,6 +311,6 @@ textarea.input0 {
   }
 
   .btn0 {
-    padding: 0.45rem 1.2rem;
+    padding: 0.4rem 1rem;
   }
 }

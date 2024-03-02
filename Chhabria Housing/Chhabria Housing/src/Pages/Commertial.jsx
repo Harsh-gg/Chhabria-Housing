@@ -1,9 +1,17 @@
 import React from 'react'
+import Hero from '../Hero'
+import image from '../assets/Commertial Projects.png';
+import Foot from '../Footer';
+import Allproj from '../allproj';
 
 function Commertial() {
   return (
     <div>
-      <h1>commertial</h1>
+      <Hero img={image}/>
+      <br/>
+      <Allproj url="Data/Commertialprojects.json"/>
+      <br/>
+      <Foot/>
     </div>
   )
 }

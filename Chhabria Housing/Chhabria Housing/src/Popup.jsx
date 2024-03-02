@@ -71,15 +71,20 @@ export default function Popup({ closePopup }) {
               <div className={css.info0}>
                 <div className={css.information0}>
                   <img src={location} className={css.icon0} alt="" />
-                  <p>92 Cherry Drive Uniondale, NY 11553</p>
+                  <p>Chembur Office : 403, 4th Floor, Vikas Centre, Nr. Cubic Mall, Dr. C.G Road, Chembur East, Mumbai - 400074</p>
+                </div>
+                <div className={css.information0}>
+                  <img src={location} className={css.icon0} alt="" />
+                  <p>
+Worli Office : B-15, 3rd Floor, Madhu Estate, Opp. Birla Niyaara, Nr. Lodha Park, Next to IKEA Kamala Mills, Pandurang Budhkar Marg, Worli, Mumbai - 400013</p>
                 </div>
                 <div className={css.information0}>
                   <img src={email} className={css.icon0} alt="" />
-                  <p>lorem@ipsum.com</p>
+                  <p>chhabriaarjun1@gmail.com</p>
                 </div>
                 <div className={css.information0}>
                   <img src={phone} className={css.icon0} alt="" />
-                  <p>123-456-789</p>
+                  <p>9821858892 / 9819134953</p>
                 </div>
               </div>
             </div>

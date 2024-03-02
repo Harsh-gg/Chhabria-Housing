@@ -17,3 +17,19 @@ body{
     width: 100%;
     justify-content: center;
 }
+.privacybox p{
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+    color: black;
+}
+.privacybox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+}

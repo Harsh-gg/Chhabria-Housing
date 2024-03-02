@@ -1,27 +1,45 @@
 import React, { useState, useEffect } from 'react';
-import CSS from './Projsection.module.css';
+import CSS from './Allproj.module.css';
 
-function Allproj() {
+function Allproj(props) {
   const [projects, setProjects] = useState([]);
-
+  const [selectedRegion, setSelectedRegion] = useState('');
+  const url=props.url;
   useEffect(() => {
-    // Read data from local JSON file (replace with your file path)
-    fetch('Data/tableConvert.com_mz0jj1.json') // Replace with your JSON file path
+    fetch(url)
       .then(response => response.json())
       .then(data => {
-        setProjects(data); // Set initial projects data
+        setProjects(data); 
       })
-      .catch(error => console.error(error)); // Handle potential errors
+      .catch(error => console.error(error)); 
   }, []);
+
+  const handleRegionChange = (event) => {
+    setSelectedRegion(event.target.value);
+  };
+
+  const filteredProjects = projects.filter(project => {
+    return !project.region || (selectedRegion && project.region === selectedRegion);
+  });  
 
   return (
     <div>
       <div className={CSS.outerm}>
-        <h1>Featured Projects</h1>
+        <h1>All Projects</h1>
+          <select value={selectedRegion} onChange={handleRegionChange} className={CSS.option}>
+            <option value="">Select Region</option>
+            <option value="north">North</option>
+            <option value="south">South</option>
+            <option value="central">Central</option>
+          </select>
         <div className={CSS.gridcontainer}>
-          {projects.map((project) => (
-            <div key={project.id} className={CSS.propertycard}>
-              <div className={CSS.propertyimage}>
+
+          {filteredProjects.length === 0 ? (
+            <p>No projects found in this region.</p>
+          ) : (
+            filteredProjects.map((project) => (
+              <div key={project.id} className={CSS.propertycard}>
+                <div className={CSS.propertyimage}>
                 <img src={project.image} alt="Property Image" />
               </div>
               <div className={CSS.propertydetails}>
@@ -30,15 +48,15 @@ function Allproj() {
                 <p className={CSS.propertylocation}>{project.area}</p>
                 <div className={CSS.propertyfeatures}>
                   <p className={CSS.propertytype}>{project.bhk} BHK</p>
-                  <p className={CSS.propertyprice}>{project.price}</p>
                 </div>
                 <button className={CSS.contactbutton}>Talk To Our Advisor</button>
                 <a href={project.website} target="_blank" rel="noopener noreferrer">
                   <button className={CSS.explorebutton}>Explore Property</button>
                 </a>
               </div>
-            </div>
-          ))}
+              </div>
+            ))
+          )}
         </div>
       </div>
     </div>

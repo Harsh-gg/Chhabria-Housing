@@ -16,6 +16,7 @@ function Join() {
       <Jobform/>
       <div id='about' ><Aboutsec/></div>
       <div id='testimonials'><Testimonial/></div>
+      <br/>
       <Foot/>
     </div>
   )

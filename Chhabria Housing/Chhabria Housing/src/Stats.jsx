@@ -85,17 +85,17 @@ function Stats() {
         <div className={StatsCSS.container1}>
           <i></i>
           <span className={StatsCSS.num}>{formatNumberWithPlus(happyCustomers)}</span>
-          <span className={StatsCSS.text}>Apartments Sold</span>
+          <span className={StatsCSS.text}>Satisfied Clients</span>
         </div>
         <div className={StatsCSS.container1}>
           <i></i>
           <span className={StatsCSS.num}>{formatNumberWithPlus(menuItems)}</span>
-          <span className={StatsCSS.text}>Developers</span>
+          <span className={StatsCSS.text}>Apartments Sold</span>
         </div>
         <div className={StatsCSS.container1}>
           <i></i>
           <span className={StatsCSS.num}>{formatNumberWithPlus(fiveStars)}</span>
-          <span className={StatsCSS.text}>Satisfied Clients</span>
+          <span className={StatsCSS.text}>Developers</span>
         </div>
         </div>
     
