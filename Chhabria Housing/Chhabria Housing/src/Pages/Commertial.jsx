@@ -9,7 +9,7 @@ function Commertial() {
     <div>
       <Hero img={image}/>
       <br/>
-      <Allproj url="Data/Commertialprojects.json"/>
+      <Allproj url="src\Data\Commertialprojects.json"/>
       <br/>
       <Foot/>
     </div>

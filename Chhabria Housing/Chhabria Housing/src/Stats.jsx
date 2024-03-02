@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import StatsCSS from "./Stats.module.css";
+import image from "./assets/untitled design.png";
 
 function Stats() {
   const [mealsDelivered, setMealsDelivered] = useState(0);
@@ -98,10 +99,8 @@ function Stats() {
           <span className={StatsCSS.text}>Developers</span>
         </div>
         </div>
-    
-
         <div className={StatsCSS.containerr2}>
-          <img src="src\assets\untitled design.png" alt="mumbai map"/>
+          <img src={image} alt="mumbai map"/>
         </div>
       </div>
       </div>

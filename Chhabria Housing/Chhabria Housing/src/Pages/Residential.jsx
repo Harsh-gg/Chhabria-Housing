@@ -9,7 +9,7 @@ function Residential() {
     <div>
       <Hero img={image}/>
       <br/>
-      <Allproj url="Data/Residential Projects.json"/>
+      <Allproj url="src\Data\Residential Projects.json"/>
       <br/>
       <Foot/>
     </div>
