@@ -271,6 +271,12 @@ textarea.input0 {
   .container0 {
     padding: 1rem;
   }
+  textarea.input0 {
+    padding: 0.8rem 1.2rem;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+  }
 
   .contactinfo0 .text0 {
     display: none;

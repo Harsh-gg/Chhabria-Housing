@@ -3,13 +3,15 @@ import Hero from '../Hero'
 import image from '../assets/Residential Projects.png';
 import Foot from '../Footer';
 import Allproj from '../allproj';
+import json from '../Data/Residential Projects';
 
 function Residential() {
+  console.log(json);
   return (
     <div>
       <Hero img={image}/>
       <br/>
-      <Allproj url="src\Data\Residential Projects.json"/>
+      <Allproj url={json}/>
       <br/>
       <Foot/>
     </div>

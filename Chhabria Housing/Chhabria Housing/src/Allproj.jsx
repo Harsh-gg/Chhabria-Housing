@@ -5,20 +5,20 @@ function Allproj(props) {
   const [projects, setProjects] = useState([]);
   const [selectedRegion, setSelectedRegion] = useState('');
   const url=props.url;
-  useEffect(() => {
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        setProjects(data); 
-      })
-      .catch(error => console.error(error)); 
-  }, []);
+  // useEffect(() => {
+  //   fetch(url)
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       setProjects(data); 
+  //     })
+  //     .catch(error => console.error(error)); 
+  // }, []);
 
   const handleRegionChange = (event) => {
     setSelectedRegion(event.target.value);
   };
 
-  const filteredProjects = projects.filter(project => {
+  const filteredProjects = url.filter(project => {
     return !project.region || (selectedRegion && project.region === selectedRegion);
   });  
 
