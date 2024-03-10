@@ -35,7 +35,7 @@ function Allproj(props) {
         <div className={CSS.gridcontainer}>
 
           {filteredProjects.length === 0 ? (
-            <p>No projects found in this region.</p>
+            <p className={CSS.def}>No projects found in this region.</p>
           ) : (
             filteredProjects.map((project) => (
               <div key={project.id} className={CSS.propertycard}>
@@ -45,13 +45,13 @@ function Allproj(props) {
               <div className={CSS.propertydetails}>
                 <h2 className={CSS.propertyname}>{project.name}</h2>
                 <p className={CSS.special}>Special Feature :</p>
-                <p className={CSS.propertylocation}>{project.area}</p>
+                <p className={CSS.propertylocation}>📍{project.area}</p>
                 <div className={CSS.propertyfeatures}>
-                  <p className={CSS.propertytype}>{project.bhk} BHK</p>
+                  <p className={CSS.propertytype}>🏠 Upto {project.bhk} BHK</p>
                 </div>
-                <button className={CSS.contactbutton}>Talk To Our Advisor</button>
+                <a href='https://wa.me/9821858892'><button className={CSS.contactbutton}>📞Talk To Our Advisor</button></a>
                 <a href={project.website} target="_blank" rel="noopener noreferrer">
-                  <button className={CSS.explorebutton}>Explore Property</button>
+                  <button className={CSS.explorebutton}>🏢Explore Property</button>
                 </a>
               </div>
               </div>

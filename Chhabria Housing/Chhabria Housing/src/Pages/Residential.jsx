@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../Hero'
 import image from '../assets/Residential Projects.png';
 import Foot from '../Footer';
-import Allproj from '../allproj';
+import Allproj from '../Allproj';
 import json from '../Data/Residential Projects';
 
 function Residential() {

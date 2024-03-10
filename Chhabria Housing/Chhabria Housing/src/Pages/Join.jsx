@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../Hero'
 import Aboutsec from '../Aboutsec'
 import Foot from '../Footer'
-import Why from '../Why'
+import WhyCaro from '../WhyCaro'
 import Jobform from '../jobform'
 import Testimonial from '../Testimonial.jsx';
 import '../App.css'
@@ -12,7 +12,9 @@ function Join() {
   return (
     <div>
       <Hero  img={image}/>
-      <Why/>
+      <br/>
+      <WhyCaro/>
+      <br/>
       <Jobform/>
       <div id='about' ><Aboutsec/></div>
       <div id='testimonials'><Testimonial/></div>

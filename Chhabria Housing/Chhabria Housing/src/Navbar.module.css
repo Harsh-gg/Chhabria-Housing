@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'LuxuryFont';
+  src: url('./fonts/Higuen Serif.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .topnav {
   position: absolute;
   z-index: 200; 
@@ -9,21 +16,33 @@
   justify-content: space-between;
   padding: 0px 0px 20px 20px;
   height: 25%;
+  font-family: 'LuxuryFont', sans-serif;
 }
 
-@media screen and (min-height: 600px) {
+@media screen and (min-height: 500px) {
   .topnav{
-    height:20%;
+    height:17%;
   }
-  
+  .chlogo{
+    height: 100%;
+    padding-bottom: 10%;
+  }
+
 }
 
-@media screen and (min-height: 800px) {
+/* @media screen and (min-height: 700px) {
   .topnav{
-    height:15%;
+    height:17%
   }
-  
-}
+  .chlogo{
+    height: 80%;
+    padding-bottom: 5%;
+  }
+  .burgerIcon{
+    display: none;
+  }
+} */
+
 
 
 #abhinav{
@@ -39,6 +58,7 @@ padding: 14px 16px;
 text-decoration: none;
 font-size: 22px;
 z-index: 200;
+font-family: 'LuxuryFont', sans-serif;
 }
 
 .topnav .icon {
@@ -50,13 +70,14 @@ float: left;
 overflow: visible;
 font-size: 22px;
 z-index: 200;
+font-family: 'LuxuryFont', sans-serif;
 }
 .dropdownn {
 float: left;
 overflow: visible;
 z-index: 200;
 position: relative;
-
+font-family: 'LuxuryFont', sans-serif;
 }
 
 .whole {
@@ -72,6 +93,7 @@ max-height: 60%;
 float: left; 
 margin-right: auto; 
 }
+
 
 .dropdown .dropbtn {
 font-size: 18px;    
@@ -198,7 +220,10 @@ z-index: 200;
   right: 0;
   top: 0;
 }
-
+.chlogo{
+  height: 100%;
+  padding-bottom: 10%;
+}
 #whole{
   display: flex;
   flex-direction: column;
@@ -263,18 +288,23 @@ display: none;
 .topnav {
   flex-direction: row; /* Stack items vertically on smaller screens */;
   padding: 0;
-  background-color: #555;
+  background-color: #282a2c;
+  height: 17%;
+}
+.chlogo{
+  height: 80%;
+  padding-bottom: 5%;
 }
 
 .burgerIcon {
   display: block; /* Show the burger icon on smaller screens */
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   padding: 10px 10px 10px 10px;
 }
 .burgerIcon:hover{
-  background-color: #555;
+  background-color: #282a2c;
 }
 .menuItems {
   display: none; /* Hide the menu items by default on smaller screens */
@@ -290,4 +320,5 @@ display: none;
   flex-direction: column;
   position: relative;
 }
+
 }

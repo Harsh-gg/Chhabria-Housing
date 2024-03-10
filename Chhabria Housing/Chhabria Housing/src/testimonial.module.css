@@ -4,83 +4,105 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
-    font-family: 'LuxuryFont', sans-serif;
-    background-color: #f4f4f4;
-    margin-top: 10;
-    padding: 0;
-    align-items: flex-start;
-    height: 100vh 
-  }
-  .name{
-    font-family: 'LuxuryFont', sans-serif;
-    font-size: 1.5em;
-    color: #D2AB67;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
+  font-family: 'LuxuryFont', sans-serif;
+  background-color: #f4f4f4;
+  margin-top: 10px; /* Fixed typo: add 'px' */
+  padding: 0;
+  align-items: flex-start;
+  height: 100vh;
+}
 
-  .testi {
-    width: 80%;
-    background-color: #343A40;
-    padding: 50px;
-    border-radius: 20px; /* Adjust the border-radius as needed for rounded corners */
-    box-shadow: 10px 14px 28px rgba(0, 0, 0, 0.4);
-    margin-left: 10%;
-  }
-  
-  .testimonialcontain {
-    font-family: 'LuxuryFont', sans-serif;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    color: #fff;
-    align-items: flex-start; /* Align items to the start of the flex container */
-  }
-  .mess{
-    font-family: 'LuxuryFont', sans-serif;
-    line-height: 1.5em;
-    font-weight: thin;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #CDD5DC;
-  }
+.name {
+  font-family: 'LuxuryFont', sans-serif;
+  font-size: 1.5em;
+  color: #d2ab67; /* Changed to lowercase for consistency */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
-  .testimonialbox {
-    font-family: "LuxuryFont", sans-serif;
-    width: calc(33.33% - 20px); /* Set each box to approximately one-third of the container width */
-    padding: 20px;
-    text-align: center;
-    color: #D2AB67;
-    margin-bottom: 20px; /* Adjust as needed for spacing between boxes */
-    box-sizing: border-box; /* Include padding in the width calculation */
-  }
-  
-  .testimonialbox img {
-    width: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial {
-    text-align: center;
-    font-size: 5ex;
-    color: #D2AB67;
-    font-family: "LuxuryFont", sans-serif;
-  }
-  
-  .head {
-    text-align: center;
-    color: #D2AB67;
-    font-family: "LuxuryFont", sans-serif;
-    font-size: large;
-    margin: 10px;
-  }
-  
+.testi {
+  width: 80%;
+  background-color: #343a40;
+  padding: 50px;
+  border-radius: 20px; /* Adjust the border-radius as needed for rounded corners */
+  box-shadow: 10px 14px 28px rgba(0, 0, 0, 0.4);
+  margin-left: 10%;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 2s ease; /* Add transition for opacity */
+}
+
+.testimonialcontain {
+  font-family: 'LuxuryFont', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #fff;
+  align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+.mess {
+  font-family: 'LuxuryFont', sans-serif;
+  line-height: 1.5em;
+  font-weight: thin;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #cdd5dc;
+}
+
+.testimonialbox {
+  font-family: "LuxuryFont", sans-serif;
+  width: calc(33.33% - 20px); /* Set each box to approximately one-third of the container width */
+  padding: 20px;
+  text-align: center;
+  color: #d2ab67; /* Changed to lowercase for consistency */
+  margin-bottom: 20px; /* Adjust as needed for spacing between boxes */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  opacity: 1; /* Initially set opacity to 0 */
+  transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+.testimonialbox img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial {
+  text-align: center;
+  font-size: 5ex;
+  color: #d2ab67; /* Changed to lowercase for consistency */
+  font-family: "LuxuryFont", sans-serif;
+}
+
+.head {
+  text-align: center;
+  color: #d2ab67; /* Changed to lowercase for consistency */
+  font-family: "LuxuryFont", sans-serif;
+  font-size: large;
+  margin: 10px;
+}
+/* Add this class to fade in testimonials when they become visible */
+.testimonialbox.fadeIn {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Add this class to the testimonial container to trigger fade in when it becomes visible */
+.testi.fadeIn {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+
+.visible .testi,
+.fadeIn .testimonialbox {
+  opacity: 1; /* Set opacity to 1 when the corresponding class is present */
+}
 @media screen and (max-width: 900px) {
   .testimonialbox {
     width: 90%; /* Set to full width on smaller screens */
-    margin: 10px;
   }
 
   .testi {

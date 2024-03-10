@@ -50,7 +50,7 @@ export default function Navbar({ openPopup }) {
             </Link>
             <HashLink to="#testimonials">Our Testimonials</HashLink>
             <Link to="/join">Join Us</Link>
-              <Link to="/about">About Us</Link>
+            <Link to="/about">About Us</Link>
           </div>
         </div>
       </div>
