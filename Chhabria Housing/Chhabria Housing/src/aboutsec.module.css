@@ -19,12 +19,8 @@
     padding-bottom: 3%;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
-    
 }
 
 .txt2 ul {
@@ -35,7 +31,6 @@
     font-family: 'LuxuryFont';
     line-height: 40px;
     letter-spacing: 1px;
-    
   }
 .txt2 li{
     font-size: 20px;
@@ -109,7 +104,6 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
 
     .txt2 li {
         font-size: 16px;

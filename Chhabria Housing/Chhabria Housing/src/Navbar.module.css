@@ -21,13 +21,13 @@
 
 @media screen and (min-height: 500px) {
   .topnav{
-    height:17%;
+    height:14%;
   }
   .chlogo{
     height: 100%;
     padding-bottom: 10%;
   }
-
+  
 }
 
 /* @media screen and (min-height: 700px) {
@@ -210,6 +210,7 @@ z-index: 200;
   justify-content: flex-end;
 }
 
+
 }
 
 
@@ -220,10 +221,7 @@ z-index: 200;
   right: 0;
   top: 0;
 }
-.chlogo{
-  height: 100%;
-  padding-bottom: 10%;
-}
+
 #whole{
   display: flex;
   flex-direction: column;
@@ -264,15 +262,20 @@ z-index: 200;
   text-align: left;
 }
 #logo{
-  max-width: 60px;
-  max-height: 48px;
+  max-width: 40px;
+  max-height: 38px;
   float: left;
- 
+  height: 120%;
+}
+.chlogo{
+  height: 20px;
+  padding-bottom: 5%;
+  
 }
 }
 
 #whole{
-padding-top: 30px;
+padding-top: 2%;
 z-index: 200;
 }
 #logo{
@@ -289,19 +292,21 @@ display: none;
   flex-direction: row; /* Stack items vertically on smaller screens */;
   padding: 0;
   background-color: #282a2c;
-  height: 17%;
+  height: 13%;
 }
 .chlogo{
-  height: 80%;
+  height: 40%;
   padding-bottom: 5%;
 }
-
+#whole{
+  padding-top: 7%;
+}
 .burgerIcon {
   display: block; /* Show the burger icon on smaller screens */
   color: white;
   font-size: 25px;
   cursor: pointer;
-  padding: 10px 10px 10px 10px;
+  padding: 0px 10px 10px 20px;
 }
 .burgerIcon:hover{
   background-color: #282a2c;

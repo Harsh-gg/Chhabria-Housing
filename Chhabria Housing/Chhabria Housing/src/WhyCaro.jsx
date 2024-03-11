@@ -9,7 +9,7 @@ import image4 from './assets/why4.png';
 export default function WhyCaro() {
   return (
     <>
-      <h1 className={css.title}>Why Work At Chhabria Hosing?</h1>
+      <h1 className={css.title}>Why Work At Chhabria Housing?</h1>
       <p className={css.desc}>At Chhabria Housing, we offer a unique approach to real estate work, backed by over 45 years of industry expertise. Our dedicated team provides personalized services, unbiased guidance, and unwavering support. Choose us for a workplace where excellence meets success, and together, we navigate the dynamic and rewarding path of the real estate market.</p>
       <br/>
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">

@@ -27,6 +27,7 @@ function Home() {
     <>
       <div className='cont'>
       <Caro/>
+      <br/>
       <AutoplayCarousel />
       <Projsection openPopup={openPopup}/>
       <div id='about'><Aboutsec/></div>

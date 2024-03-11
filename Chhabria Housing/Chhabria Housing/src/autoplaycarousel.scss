@@ -16,7 +16,7 @@
     color: #d2ab67; /* Golden font color */
     text-align: center;
     font-size: 3em; /* Adjust the font size as needed */
-    margin-bottom: 50px; 
+    margin-bottom: 15px; 
     font-family: "LuxuryFont", sans-serif; 
     margin-top: -10%;
 }
@@ -44,15 +44,21 @@
     min-width: 150px /* Set a maximum width to avoid images becoming too small */
   }
 }
-
 @media (max-width: 425px) {
   .carousel-card > img {
     width: 150%; /* Adjust the width for smaller screens */
-    min-width: 150px /* Set a maximum width to avoid images becoming too small */
+    min-width: 150px; /* Set a maximum width to avoid images becoming too small */
   }
-  .head{
+  .head {
     font-size: 2em; /* Adjust the font size as needed */
-    margin-top: -30%;
+    margin-top: -30px; /* Adjust margin-top to move the component up */
+    margin-bottom: 0px;
+  }
+  .Outer {
+    margin-top: -20px; /* Adjust margin-top to minimize white space */
+  }
+  .carousel-track{
+    margin-top: -20px; /* Adjust margin-top to minimize white space */
   }
 }
 
