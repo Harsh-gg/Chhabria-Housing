@@ -16,7 +16,6 @@ function Testimonial() {
 
         observer.observe(testimonialRef.current);
 
-        // Cleanup function to disconnect the observer when component unmounts
         return () => observer.disconnect();
     }, []);
 

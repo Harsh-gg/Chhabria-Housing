@@ -4,12 +4,6 @@
   font-weight: normal;
   font-style: normal;
 }
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
   .title {
     color: #d2ab67; /* Golden font color */
     text-align: center;
@@ -29,10 +23,15 @@
     background-position: center center;
   }
   .containerr2{
-    width: 32%;
+    width: 30%;
     height: auto;
-    margin-right: 5%;
     object-fit: cover;
+  }
+  .containerr2>img {
+    object-fit: cover;
+    height: 95%;
+    margin-left: 50px;
+    filter: brightness(0.3);
   }
   
   .wrapper {

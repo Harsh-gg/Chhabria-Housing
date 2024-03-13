@@ -1,118 +1,91 @@
-@font-face {
-    font-family: 'LuxuryFont';
-    src: url('./Higuen Serif.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-.title2 h1{
+.title2 h1 {
     text-align: center;
     padding: 20px;
     margin: 0;
     font-family: 'LuxuryFont';
     font-size: 50px;
-}
-.whole2{
-    background-color: #343A40 ;
-    color: #D2AB67 ;
+  }
+  
+  .whole2 {
+    background-color: #343A40;
+    color: #D2AB67;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.txt2 ul {
-    list-style-type: disc;
-    padding-left: 20px; 
-    line-height: 30px; 
-    text-align: left;
-    font-family: 'LuxuryFont';
-    line-height: 40px;
-    letter-spacing: 1px;
   }
-.txt2 li{
-    font-size: 20px;
-    font-family: 'LuxuryFont';
-    font-size: 20px;
-}
-.approachcontainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; /* Adjust the height as needed */
-    overflow: hidden;
+  
+  .title3 {
     text-align: center;
-}
-
-.subheader2, .sub22 {
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'LuxuryFont';
+  }
+  
+  .carocont1,.carocont2 {
+    height: auto;
+  }
+  .carocont1 {
+    height: 100%;
+    padding-bottom: 5%;
+    font-size: 30px;
+  }
+  .carocont2 {
+        height: 100%;
+        padding-bottom: 5%;
+        font-size: 30px;
+    }
+  
+  .subheader2, .sub22 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'LuxuryFont';
-}
-
-.two2{
-    margin-top: 80px;
-}
-.one2, .two2 {
-    flex: 1;
-}
-.two2, .one2{
-    text-align: center;
-    flex: 1;
-}
-@media screen and (max-width: 767px) {
+  }
+  
+  /* New CSS rule to fix carousel overflow */
+  .carouselFix {
+    white-space: nowrap; /* This prevents text wrapping within the carousel */
+    overflow-x: scroll;  /* Enables horizontal scrolling for the carousel content */
+    scroll-snap-type: x mandatory; /* Enables snapping to carousel items on scroll */
+    /* Adjust these properties as needed for responsiveness and styling */
+    width: 100%; /* Set the width explicitly */
+    margin: 0 auto; /* Center the carousel horizontally */
+  }
+  
+  @media screen and (max-width: 767px) {
     .title2 h1 {
-        font-size: 36px; /* Adjust the font size for mobile */
+      font-size: 2em;
     }
-    .txt2 ul{
-        letter-spacing: 1px;
-        line-height: 25px;
-
-    }
-    .txt2 li{
-        line-height: 25px;
-    }
-
     .whole2 {
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 2%;
-        margin-top: 15px;
-        margin-bottom: 15px;
+       padding: 0;
+       height: 105vh;
     }
-
-    .txt2 p {
-        font-size: 18px; /* Adjust the font size for mobile */
+    .carocont1{
+        height: 100%;
+        padding-bottom: 20%;
+        font-size: 20px;
     }
-
-    .subheader2, .sub22 {
-        font-size: 20px; /* Adjust the font size for mobile */
+    .carocont1 h2{
+        padding: 0;
+        font-size: 30px;
     }
-}
-@media screen and (max-width: 575px) {
-    .title2 h1 {
-        font-size: 28px; /* Adjust the font size for mobile */
+    .carocont2 h2{
+        padding: 0;
+        font-size: 30px;
     }
-
-    .whole2 {
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 2%;
-        margin-top: 15px;
-        margin-bottom: 15px;
+    .carouselFix{
+        height: 100%;
     }
-
-    .txt2 li {
-        font-size: 16px;
-        
-        /* Adjust the font size for mobile */
+    .carocont2{
+        height: 100%;
+        padding-bottom: 3%;
+        font-size: 20px;
+        z-index: 9999;
     }
-
-    .subheader2, .sub22 {
-        font-size: 20px; /* Adjust the font size for mobile */
-    }
-    
-}
+  }
+  

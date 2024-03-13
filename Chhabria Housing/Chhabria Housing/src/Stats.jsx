@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import StatsCSS from "./Stats.module.css";
-import image from "./assets/untitled design.png";
+import image from "./assets/mumbai_map2.png";
 
 function Stats() {
   const [mealsDelivered, setMealsDelivered] = useState(0);

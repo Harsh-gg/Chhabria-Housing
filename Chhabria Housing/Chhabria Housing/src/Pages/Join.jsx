@@ -12,7 +12,6 @@ function Join() {
   return (
     <div>
       <Hero  img={image}/>
-      <br/>
       <WhyCaro/>
       <br/>
       <Jobform/>
