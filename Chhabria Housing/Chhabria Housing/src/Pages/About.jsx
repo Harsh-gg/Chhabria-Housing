@@ -5,7 +5,6 @@ import image from '../assets/About Us.png'
 import Founders from '../Founders'
 import Aboutsec from '../Aboutsec'
 import Testimonial from '../Testimonial.jsx';
-import Achievements from '../Achievements.jsx'
 
 function About() {
   return (

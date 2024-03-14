@@ -18,7 +18,7 @@ export default function Aboutsec() {
         <div className="grid h-[82vh] sm:h-96 xl:h-[60vh] w-full auto-cols-fr gap-4 gap-y-2 sm:grid-cols-2 overflow-hidden">
           <div className={CSS.carocont1}>
             <h2 className={CSS.title3}>Why Choose Us</h2>
-            <Carousel indicators={false} pauseOnHover className={CSS.carouselFix}>
+            <Carousel indicators={false} pauseOnHover className={CSS.carouselFix} leftControl=' ' rightControl=' '>
               <img src={img1} alt="Trust" />
               <img src={img2} alt="Transparancy" />
               <img src={img3} alt="Integrity" />
@@ -26,7 +26,7 @@ export default function Aboutsec() {
           </div>
           <div className={CSS.carocont2}>
             <h2 className={CSS.title3}>Our Services</h2>
-            <Carousel indicators={false} pauseOnHover className={CSS.carouselFix}>
+            <Carousel indicators={false} pauseOnHover className={CSS.carouselFix} leftControl=' ' rightControl=' '>
               <img src={img4} alt="Property Mangement" />
               <img src={img5} alt="Portfolio Management" />
               <img src={img6} alt="Design Consultancy" />

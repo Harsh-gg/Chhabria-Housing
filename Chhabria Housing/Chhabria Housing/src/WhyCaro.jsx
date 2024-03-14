@@ -10,6 +10,7 @@ export default function WhyCaro() {
     <>
       <div className={styles.container12}>
       <h1 className={styles.heading}>Why work at Chhabria Housing</h1>
+      <br/>
       <div className={styles.content}>
         <div className={styles.data}>Dynamic Learning Environment
           <h2 className={styles.info}>
