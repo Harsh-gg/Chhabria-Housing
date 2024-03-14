@@ -7,6 +7,7 @@
         "bhk": "8",
         "website": "https://birlaestateworli.in/",
         "region": "south"
+
     },
     {
         "id": "2",
@@ -16,6 +17,7 @@
         "bhk": "3",
         "website": "https://godrejpropertieswadala.in/",
         "region": "south"
+
     },
     {
         "id": "3",
@@ -25,6 +27,7 @@
         "bhk": "3",
         "website": "https://tridhaatumoryachembur.co.in/",
         "region": "south"
+
     },
     {
         "id": "4",
@@ -34,6 +37,7 @@
         "bhk": "4",
         "website": "https://safalsai.co.in/",
         "region": "south"
+
     },
     {
         "id": "5",
@@ -43,6 +47,7 @@
         "bhk": "4",
         "website": "http://safalgolfresidencies.co.in/",
         "region": "south"
+
     },
     {
         "id": "6",
@@ -52,6 +57,7 @@
         "bhk": "5",
         "website": "https://xbkcmumbai.co.in/",
         "region": "central"
+
     },
     {
         "id": "7",
@@ -61,15 +67,17 @@
         "bhk": "3",
         "website": "https://supremeelenorchembur.co.in/",
         "region": "south"
+
     },
     {
         "id": "8",
-        "name": "The Lokhandwala Minerva Towers",
+        "name": "The Minerva Towers",
         "image": "https://i.ibb.co/0K8KLvj/image.png",
-        "area": "Lokhandwala",
+        "area": "Mahalaxmi",
         "bhk": "4",
         "website": "http://thelokhandwalaminerva.co.in/",
         "region": "south"
+
     },
     {
         "id": "9",
@@ -79,6 +87,7 @@
         "bhk": "4",
         "website": "http://lntrealty-crescentbay.in/",
         "region": "south"
+
     },
     {
         "id": "10",
@@ -88,6 +97,7 @@
         "bhk": "5",
         "website": "https://thelodhaworldtowers.in/",
         "region": "south"
+
     },
     {
         "id": "11",
@@ -97,6 +107,7 @@
         "bhk": "3",
         "website": "https://godrejproperties-matunga.co.in/",
         "region": "south"
+
     },
     {
         "id": "12",
@@ -106,6 +117,7 @@
         "bhk": "4",
         "website": "https://theshapoorjipallonjiminerva.co.in/",
         "region": "south"
+
     },
     {
         "id": "13",
@@ -115,6 +127,7 @@
         "bhk": "8",
         "website": "https://25southprabhadevi.co.in/",
         "region": "south"
+
     },
     {
         "id": "14",
@@ -124,6 +137,7 @@
         "bhk": "4",
         "website": "https://therahejamodernvivarea.co.in/",
         "region": "south"
+
     },
     {
         "id": "15",
@@ -133,6 +147,7 @@
         "bhk": "4",
         "website": "https://godrejpropertiesmahalaxmi.co.in/",
         "region": "south"
+
     },
     {
         "id": "16",
@@ -142,6 +157,7 @@
         "bhk": "3",
         "website": "https://vaibhavlaxmi-chembur.co.in/",
         "region": "south"
+
     },
     {
         "id": "17",
@@ -151,6 +167,7 @@
         "bhk": "4",
         "website": "https://hubtownseasons-chembur.in/",
         "region": "south"
+
     },
     {
         "id": "18",
@@ -160,6 +177,7 @@
         "bhk": "5",
         "website": "https://rahejaimperia.co.in/",
         "region": "South"
+
     },
     {
         "id": "19",
@@ -169,6 +187,7 @@
         "bhk": "3",
         "website": "https://therustomjeeseasons.co.in/",
         "region": "central"
+
     },
     {
         "id": "20",
@@ -178,6 +197,7 @@
         "bhk": "4",
         "website": "https://theprestigeoceantowers.in/",
         "region": "South"
+
     },
     {
         "id": "21",
@@ -187,6 +207,7 @@
         "bhk": "4",
         "website": "https://thelodhabellevuemahalaxmi.in/",
         "region": "South"
+
     },
     {
         "id": "22",
@@ -196,6 +217,7 @@
         "bhk": "5",
         "website": "https://lnt77crossroadsghatkopar.co.in/",
         "region": "central"
+
     },
     {
         "id": "23",
@@ -205,6 +227,7 @@
         "bhk": "5",
         "website": "https://micl-aaradhyaavaan.co.in/",
         "region": "South"
+
     },
     {
         "id": "24",
@@ -214,6 +237,7 @@
         "bhk": "5",
         "website": "https://thegodrejskyterraces.com/",
         "region": "South"
+
     },
     {
         "id": "25",
@@ -223,6 +247,7 @@
         "bhk": "4",
         "website": "https://godrejrks-chembur.co.in/",
         "region": "south"
+
     },
     {
         "id": "26",
@@ -232,6 +257,7 @@
         "bhk": "4",
         "website": "https://raymondrealty-theaddressbandra.in/",
         "region": "south"
+
     },
     {
         "id": "27",
@@ -241,6 +267,7 @@
         "bhk": "4",
         "website": "https://puravankara-purvaclermontchembur.in/",
         "region": "south"
+
     }
 ]
 export default json2;

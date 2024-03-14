@@ -52,8 +52,10 @@ export default function Contact({openPopup}) {
             <div className={Contactcss.rightsection}>
                 <h1 className={Contactcss.title}>Contact Information & Inquiry Form</h1>
                 <h3 className={Contactcss.subtitle}>Connect with us and Share your Inquiries for a Personalized Experience </h3>
+                <div className={Contactcss.buttons}>
                 <button type="submit" className={Contactcss.submit} onClick={submitData}>Submit</button>
                 <button type="reset" className={Contactcss.submitt} onClick={openPopup}>Talk to Our Advisor</button>
+                </div>
             </div>
             <div className={Contactcss.leftsection}>
                     <label for="fullName" className={Contactcss.labell}>Full Name:*</label>

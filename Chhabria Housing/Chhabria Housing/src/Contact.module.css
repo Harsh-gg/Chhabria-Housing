@@ -80,7 +80,6 @@
     font-size: 16px;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
-    margin-left: 15px;
     margin-top: 20px;
   }
   
@@ -118,6 +117,10 @@
     }
     .subtitle{
       text-align: center;
+    }
+    .buttons{
+      display: flex;
+      justify-content: center;
     }
    
   }

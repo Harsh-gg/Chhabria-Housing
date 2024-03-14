@@ -22,6 +22,8 @@
   .option{
     margin: 20px;
     font-family: "LuxuryFont", sans-serif;
+    height: 60px;
+    font-size: 1.5em;
   }
   .special{
     color: rgb(28, 28, 28);
@@ -38,10 +40,11 @@
   }
   .gridcontainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     gap: 50px;
     padding: 20px;
     text-align: center;
+    flex-wrap: wrap;
   }
   .propertyfeatures p{
     color: rgb(27, 27, 27);
@@ -51,12 +54,11 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    border: 1px solid #D2AB67; /* Adjust border color */
+    border: 1px solid #D2AB67;
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
 }
-
 .propertyimage img {
     width: 100%;
     height: auto;
@@ -111,35 +113,40 @@
   
   @media (max-width: 600px) {
     .gridcontainer {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 20px;
     }
+    .option{
+      margin: 20px;
+      font-family: "LuxuryFont", sans-serif;
+      height: 35px;
+      font-size: 1em;
+    }
+    
   }
-  
   .propertyname {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 12px;
   }
-  
   .propertylocation {
     font-size: 16px;
   }
-  
   .propertyfeatures {
     justify-content: space-between;
     margin-top: 24px;
     margin-bottom: 24px;
   }
-  
   .propertytype {
     font-size: 16px;
   }
-  
   .propertyprice {
     font-size: 16px;
     font-weight: bold;
   }
-  
   .contactbutton {
     background-color: #8DAFCE;
     color: #fff;
@@ -149,7 +156,6 @@
     font-size: 16px;
     cursor: pointer;
   }
-  
   .explorebutton {
     background-color: #edf6ff;  
     color: white;

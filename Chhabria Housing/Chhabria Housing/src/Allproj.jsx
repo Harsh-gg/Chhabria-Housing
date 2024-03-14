@@ -20,23 +20,32 @@ function Allproj(props) {
   };
 
   const filteredProjects = url.filter(project => {
-    return !project.area || (selectedArea && project.area === selectedArea);
+    return !project.area || (selectedArea && project.area === selectedArea) || selectedArea === '';
   });  
 
   return (
     <div>
       <div className={CSS.outerm}>
-        <h1>All Projects</h1>
+        <h1>See All Projects In :</h1>
           <select value={selectedArea} onChange={handleRegionChange} className={CSS.option}>
-            <option value="">Select Area</option>
-            <option value="Worli">Worli</option>
-            <option value="Chembur">Chembur</option>
-            <option value="Wadala">Wadala</option>
+            <option value="">All Projects</option>
+            <option value="Altamount Road">Altamount Road</option>
+            <option value="Bandra">Bandra</option>
             <option value="BKC">BKC</option>
-            <option value="Lokhandwala">Lokhandwala</option>
-            <option value="Parel">Parel</option>
+            <option value="Breach Candy">Breach Candy</option>
+            <option value="Chembur">Chembur</option>
+            <option value="Juhu">Juhu</option>
             <option value="Lower Parel">Lower Parel</option>
+            <option value="Lokhandwala">Lokhandwala</option>
             <option value="Mahalaxmi">Mahalaxmi</option>
+            <option value="Marine Lines">Marine Liens</option>
+            <option value="Nepeansea Road">Nepeansea Road</option>
+            <option value="Parel">Parel</option>
+            <option value="Prabhadevi">Prabhadevi</option>
+            <option value="Tardeo">Tardeo</option>
+            <option value="Wadala">Wadala</option>
+            <option value="Walkeshwar">Walkeshwar</option>
+            <option value="Worli">Worli</option>
           </select>
 
         <div className={CSS.gridcontainer}>

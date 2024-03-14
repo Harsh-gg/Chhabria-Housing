@@ -16,7 +16,7 @@ export default function Projsection({openPopup}) {
                         </div>
                         <div className={CSS.propertydetails}>
                             <h2 className={CSS.propertyname}>Birla Niyara Worli</h2>
-                            <p className={CSS.special}>Special Feature: Longe Bar terrace</p>
+                            <p className={CSS.special}>Special Feature: Longe Bar terrace, Sea View Homes</p>
                             <p className={CSS.propertylocation}>📍 Worli</p>
                             <div className={CSS.propertyfeatures}>
                                 <p className={CSS.propertytype}>🏠 Upto 8 BHK</p>
@@ -31,7 +31,7 @@ export default function Projsection({openPopup}) {
                         </div>
                         <div className={CSS.propertydetails}>
                             <h2 className={CSS.propertyname}>The Minerva</h2>
-                            <p className={CSS.special}>Special Feature: Screening Room</p>
+                            <p className={CSS.special}>Special Feature: Screening Room, Multisport Court</p>
                             <p className={CSS.propertylocation}>📍 Mahalakshmi</p>
                             <div className={CSS.propertyfeatures}>
                                 <p className={CSS.propertytype}>🏠 3.5 & 4 BHK</p>
@@ -47,7 +47,7 @@ export default function Projsection({openPopup}) {
                         </div>
                         <div className={CSS.propertydetails}>
                             <h2 className={CSS.propertyname}>Godrej Avenue Eleven</h2>
-                            <p className={CSS.special}>Special Feature: Rooftop Infinity Pool</p>
+                            <p className={CSS.special}>Special Feature: Rooftop Infinity Pool, Olympic length pool</p>
                             <p className={CSS.propertylocation}>📍 Mahalaxmi.</p>
                             <div className={CSS.propertyfeatures}>
                                 <p className={CSS.propertytype}>🏠 4 BHK</p>
