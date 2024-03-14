@@ -7,10 +7,12 @@ import Jobform from '../jobform'
 import Testimonial from '../Testimonial.jsx';
 import '../App.css'
 import image from '../assets/Join Our Team.png';
+import Navbar from '../Navbar.jsx'
 
 function Join() {
   return (
     <div>
+      <Navbar />
       <Hero  img={image}/>
       <WhyCaro/>
       <br/>

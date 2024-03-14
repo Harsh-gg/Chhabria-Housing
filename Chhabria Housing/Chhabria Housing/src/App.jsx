@@ -6,8 +6,8 @@ import Navbar from './Navbar.jsx';
 import Popup from './Popup';
 import Join from './Pages/Join.jsx';
 import Privacypolicy from './Pages/Privacypolicy.jsx';
-import Commertial from './Pages/commertial.jsx';
-import Residential from './Pages/residential.jsx';
+import Commertial from './Pages/Commertial.jsx';
+import Residential from './Pages/Residential.jsx';
 import About from './Pages/About.jsx';
 
 
@@ -25,7 +25,7 @@ function App() {
   };
   return (
     <>
-      <Navbar openPopup={openPopup}/>
+      {/* <Navbar openPopup={openPopup}/> */}
       {isPopupOpen && <Popup closePopup={closePopup} />}
       <Routes>
         <Route path="/" element={<Home/>} />
