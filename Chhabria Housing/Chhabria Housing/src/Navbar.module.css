@@ -297,6 +297,10 @@ float: left;
 }
 .burgerIcon{
 display: none;
+background-color: black;
+border-radius: 6px;
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -318,11 +322,15 @@ display: none;
   color: white;
   font-size: 25px;
   cursor: pointer;
-  padding: 0px 10px 10px 20px;
+  padding: 0px 10px 10px 10px;
+  margin-right: 10px;
+  max-width: 40px;
+  max-height: 36px;
+  margin-left: auto;
 }
-.burgerIcon:hover{
+/* .burgerIcon:hover{
   background-color: #282a2c;
-}
+} */
 .menuItems {
   display: none; /* Hide the menu items by default on smaller screens */
 }

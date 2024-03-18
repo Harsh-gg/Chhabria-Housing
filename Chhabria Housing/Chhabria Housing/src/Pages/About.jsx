@@ -35,6 +35,7 @@ function About() {
       <Navbar openPopup={openPopup} />
       {isPopupOpen && <Popup closePopup={closePopup} />}
       <Hero img={image}/>
+      <br />
       <Aboutsec />
       <Founders />
       <div id='testimonials'><Testimonial/></div>

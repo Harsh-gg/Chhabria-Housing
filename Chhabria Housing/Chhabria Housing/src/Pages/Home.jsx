@@ -41,6 +41,7 @@ function Home() {
         <br/>
         <AutoplayCarousel />
         <Projsection openPopup={openPopup}/>
+        <br/>
         <div id='about'><Aboutsec/></div>
         <Stats />
         <div id='testimonials'><Testimonial/></div>

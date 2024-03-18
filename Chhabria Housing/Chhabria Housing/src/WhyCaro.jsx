@@ -20,13 +20,14 @@ export default function WhyCaro() {
         <img className={styles.image} src={bookImage} alt="Book" />
       </div>
       <div className={styles.content}>
-        <img className={styles.image} src={growthImage} alt="Growth" />
+        
         <div className={styles.data}>
           Personalized Career Development
           <h2 className={styles.info}>
           At our company, we understand that each career journey is unique. That's why we offer personalized career development tailored to your aspirations and goals. From mentorship programs to specialized training, we're committed to helping you chart a path that aligns with your ambitions and ensures meaningful growth and success.
           </h2>
         </div>
+        <img className={styles.image} src={growthImage} alt="Growth" />
       </div>
       <div className={styles.content}>
         <div className={styles.data}>Transparent Work Culture
@@ -37,12 +38,13 @@ export default function WhyCaro() {
         <img className={styles.image} src={transparencyImage} alt="Transparency" />
       </div>
       <div className={styles.content}>
-        <img className={styles.image} src={advancementImage} alt="Advancement" />
+        
         <div className={styles.data}>Proven Career Advancement
           <h2 className={styles.info}>
           Join our team and unlock the path to proven career advancement. With a track record of nurturing talent and promoting from within, we offer opportunities for growth and progression based on merit and dedication. Elevate your career with us, where your potential is recognized, and your ambitions are realized.
           </h2>
         </div>
+        <img className={styles.image} src={advancementImage} alt="Advancement" />
       </div>
     </div>
 
