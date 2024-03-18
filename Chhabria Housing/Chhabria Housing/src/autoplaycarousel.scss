@@ -12,21 +12,22 @@
   width: 100%;
   margin-bottom: 30px;
 }
+
 .head {
     color: #d2ab67; /* Golden font color */
     text-align: center;
     font-size: 3em; /* Adjust the font size as needed */
     margin-bottom: 15px; 
     font-family: "LuxuryFont", sans-serif; 
-    margin-top: -10%;
+    margin-top: -11%;
 }
 
 .carousel-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   border-radius: 20%;
   background: transparent;
 }
@@ -35,7 +36,6 @@
   height: 200px;
   width: 200px; /* Use 100% width for the image */
   object-fit: contain;
-  border-radius: 20%;
 }
 
 @media (max-width: 600px) {
@@ -51,7 +51,7 @@
   }
   .head {
     font-size: 2em; /* Adjust the font size as needed */
-    margin-top: -30px; /* Adjust margin-top to move the component up */
+    margin-top: -15px; /* Adjust margin-top to move the component up */
     margin-bottom: 0px;
   }
   .Outer {
@@ -59,6 +59,11 @@
   }
   .carousel-track{
     margin-top: -20px; /* Adjust margin-top to minimize white space */
+    animation: slide 5s linear infinite;
+  }
+  .carousel-track {
+    margin-top: -20px; /* Adjust margin-top to minimize white space */
+    animation-duration: 10s; /* Adjust the duration for faster movement */
   }
 }
 
@@ -79,12 +84,23 @@
   left: 0;
   justify-content: center;
   align-items: center;
-  gap: 16px; /* Adjust this gap as needed */
-  width: 200%;
+  gap: 15px; /* Adjust this gap as needed */
+  width: 280%;
   height: 100%;
   animation: slide 20s linear infinite;
 }
 
+@media (max-width: 425px) {
+  .carousel-track {
+    animation-duration: 10s; /* Adjust the duration for faster movement */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-track {
+    animation-duration: 10s; /* Adjust the duration for faster movement */
+  }
+}
 @keyframes slide {
   0% {
     left: 0;

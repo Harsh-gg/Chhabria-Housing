@@ -15,7 +15,7 @@ export default function Projsection({openPopup}) {
                             <img src={img1} alt="Property Image" />
                         </div>
                         <div className={CSS.propertydetails}>
-                            <h2 className={CSS.propertyname}>Birla Niyara Worli</h2>
+                            <h2 className={CSS.propertyname}>Birla Niyaara Worli</h2>
                             <p className={CSS.special}>Special Feature: Longe Bar terrace, Sea View Homes</p>
                             <p className={CSS.propertylocation}>📍 Worli</p>
                             <div className={CSS.propertyfeatures}>

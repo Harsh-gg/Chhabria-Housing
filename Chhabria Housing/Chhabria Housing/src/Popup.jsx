@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import  css from"./Popup.module.css";
+import css from"./Popup.module.css";
 import email from "./assets/email.png";
 import location from "./assets/location.png";
 import phone from "./assets/phone.png";
@@ -101,7 +101,7 @@ Worli Office : B-15, 3rd Floor, Madhu Estate, Opp. Birla Niyaara, Nr. Lodha Park
                   <input type="tel" name="phone" className={css.input0} placeholder="Phone" value={userData.phone} onChange={postUserData}/>
                 </div>
                 <div className={css.inputcontainertextarea0}>
-                  <textarea name="message" className={css.input0} placeholder="Messasge" value={userData.message} onChange={postUserData}></textarea>
+                  <textarea name="message" className={css.input1} placeholder="Messasge" value={userData.message} onChange={postUserData}></textarea>
                 </div>
                 <div className={css.buttonss}>
                   <input type="submit" value="Send" className={css.btn0}  onClick={submitData}/>

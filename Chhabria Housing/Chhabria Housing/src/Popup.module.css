@@ -93,6 +93,19 @@
   border-radius: 25px;
   transition: 0.3s;
 }
+.input1 {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
 
 textarea.input0 {
   padding: 0.8rem 1.2rem;
@@ -269,15 +282,26 @@ textarea.input0 {
 
 @media (max-width: 480px) {
   .container0 {
-    padding: 1rem;
+    padding: 0;
+  }
+  .contactinfo0{
+    padding: 0;
+  }
+  .inputcontainer0{
+    margin: 0;
   }
   textarea.input0 {
-    padding: 0.8rem 1.2rem;
+    padding: 0.5rem 1rem;
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
   }
-
+  textarea.input1 {
+    padding: 0.5rem 1rem;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+  }
   .contactinfo0 .text0 {
     display: none;
   }
@@ -313,7 +337,7 @@ textarea.input0 {
   }
 
   .input0 {
-    padding: 0.45rem 1.2rem;
+    padding: 0.45rem 1rem;
   }
 
   .btn0 {

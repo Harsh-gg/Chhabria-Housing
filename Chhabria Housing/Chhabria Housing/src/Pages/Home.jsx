@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect } from 'react';
 import AutoplayCarousel from '../AutoplayCarousel';
 import Stats from '../Stats.jsx';
 import Popup from '../Popup';
@@ -24,10 +24,19 @@ function Home() {
     document.body.style.overflow = "auto"; // Enable scrolling
   };
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      openPopup();
+    }, 1 * 60 * 1000); 
+
+    return () => clearInterval(intervalId);
+  }, []); 
+
   return (
     <>
       <div className='cont'>
-        <Navbar />
+        <Navbar openPopup={openPopup} />
+        {isPopupOpen && <Popup closePopup={closePopup} />}
         <Caro/>
         <br/>
         <AutoplayCarousel />

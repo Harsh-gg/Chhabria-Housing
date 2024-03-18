@@ -7,7 +7,6 @@
         "bhk": "8",
         "website": "https://birlaestateworli.in/",
         "region": "south"
-
     },
     {
         "id": "2",
@@ -16,8 +15,7 @@
         "area": "Wadala",
         "bhk": "3",
         "website": "https://godrejpropertieswadala.in/",
-        "region": "south"
-
+        "region": "harbour"
     },
     {
         "id": "3",
@@ -26,8 +24,7 @@
         "area": "Chembur",
         "bhk": "3",
         "website": "https://tridhaatumoryachembur.co.in/",
-        "region": "south"
-
+        "region": "harbour"
     },
     {
         "id": "4",
@@ -36,17 +33,17 @@
         "area": "Chembur",
         "bhk": "4",
         "website": "https://safalsai.co.in/",
-        "region": "south"
+        "region": "harbour"
 
     },
     {
         "id": "5",
         "name": "Safal Golf Residences",
-        "image": "http://safalgolfresidencies.co.in/upload/Projectimages/chhabriaarjun1/chhabriaarjun1_0707151716.png",
+        "image": "https://i.ibb.co/yNTjBNW/image.png",
         "area": "Chembur",
         "bhk": "4",
         "website": "http://safalgolfresidencies.co.in/",
-        "region": "south"
+        "region": "harbour"
 
     },
     {
@@ -66,7 +63,7 @@
         "area": "Chembur",
         "bhk": "3",
         "website": "https://supremeelenorchembur.co.in/",
-        "region": "south"
+        "region": "harbour"
 
     },
     {
@@ -106,7 +103,7 @@
         "area": "Matunga",
         "bhk": "3",
         "website": "https://godrejproperties-matunga.co.in/",
-        "region": "south"
+        "region": "central"
 
     },
     {
@@ -156,7 +153,7 @@
         "area": "Chembur",
         "bhk": "3",
         "website": "https://vaibhavlaxmi-chembur.co.in/",
-        "region": "south"
+        "region": "harbour"
 
     },
     {
@@ -166,7 +163,7 @@
         "area": "Chembur",
         "bhk": "4",
         "website": "https://hubtownseasons-chembur.in/",
-        "region": "south"
+        "region": "harbour"
 
     },
     {
@@ -176,7 +173,7 @@
         "area": "Worli",
         "bhk": "5",
         "website": "https://rahejaimperia.co.in/",
-        "region": "South"
+        "region": "south"
 
     },
     {
@@ -196,7 +193,7 @@
         "area": "Marine Lines",
         "bhk": "4",
         "website": "https://theprestigeoceantowers.in/",
-        "region": "South"
+        "region": "south"
 
     },
     {
@@ -206,7 +203,7 @@
         "area": "Mahalaxmi",
         "bhk": "4",
         "website": "https://thelodhabellevuemahalaxmi.in/",
-        "region": "South"
+        "region": "south"
 
     },
     {
@@ -226,7 +223,7 @@
         "area": "Tardeo",
         "bhk": "5",
         "website": "https://micl-aaradhyaavaan.co.in/",
-        "region": "South"
+        "region": "south"
 
     },
     {
@@ -236,7 +233,7 @@
         "area": "Chembur",
         "bhk": "5",
         "website": "https://thegodrejskyterraces.com/",
-        "region": "South"
+        "region": "harbour"
 
     },
     {
@@ -246,7 +243,7 @@
         "area": "Chembur",
         "bhk": "4",
         "website": "https://godrejrks-chembur.co.in/",
-        "region": "south"
+        "region": "harbour"
 
     },
     {
@@ -256,7 +253,7 @@
         "area": "Bandra",
         "bhk": "4",
         "website": "https://raymondrealty-theaddressbandra.in/",
-        "region": "south"
+        "region": "central"
 
     },
     {
@@ -266,7 +263,7 @@
         "area": "Chembur",
         "bhk": "4",
         "website": "https://puravankara-purvaclermontchembur.in/",
-        "region": "south"
+        "region": "harbour"
 
     }
 ]

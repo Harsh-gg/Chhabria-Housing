@@ -90,9 +90,11 @@
     }
     .para{
         width: 100%;
+        text-align: justify;
     }
     .heading{
         width: 100%;
+        text-align: center;
     }
     
 }

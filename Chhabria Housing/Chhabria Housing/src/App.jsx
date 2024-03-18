@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       {/* <Navbar openPopup={openPopup}/> */}
-      {isPopupOpen && <Popup closePopup={closePopup} />}
+      {/* {isPopupOpen && <Popup closePopup={closePopup} />} */}
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/join" element={<Join/>} />
