@@ -1,5 +1,9 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 body{
     background-color: rgb(255, 255, 247);
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* .cont{ 
     height: 100vh;

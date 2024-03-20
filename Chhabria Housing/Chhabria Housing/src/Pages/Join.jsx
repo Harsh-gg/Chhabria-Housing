@@ -26,11 +26,10 @@ function Join() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       openPopup();
-    }, 1 * 60 * 1000); // 2 minutes in milliseconds
-
-    // Clear interval on component unmount
+    }, 0.3 * 60 * 1000); 
     return () => clearInterval(intervalId);
-  }, []); // Empty dependency array to run this effect only once on component mount
+  }, []); 
+  
   return (
     <div>
       <Navbar openPopup={openPopup} />

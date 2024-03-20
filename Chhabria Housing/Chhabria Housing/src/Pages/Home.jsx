@@ -27,7 +27,7 @@ function Home() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       openPopup();
-    }, 1 * 60 * 1000); 
+    }, 0.3 * 60 * 1000); 
 
     return () => clearInterval(intervalId);
   }, []); 

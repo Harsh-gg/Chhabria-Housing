@@ -19,7 +19,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  font-family: "LuxuryFont", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .whole {
@@ -48,7 +48,7 @@
 .description {
   font-size: 1.5rem;
   color: #CDD5DC;
-  font-family: "LuxuryFont", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .teammemberimage {
@@ -71,14 +71,14 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.25rem;
-  font-family: "LuxuryFont", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .teammemberrole {
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
   color: white;
-  font-family: "LuxuryFont", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Media Queries for responsiveness */
@@ -98,12 +98,12 @@
   .description {
     font-size: 1rem;
     color: #CDD5DC;
-    font-family: "LuxuryFont", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .teammembername {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.25rem;
-    font-family: "LuxuryFont", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }

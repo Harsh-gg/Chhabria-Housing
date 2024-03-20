@@ -5,7 +5,7 @@
     font-style: normal;
   }
 .def{
-    font-family: "LuxuryFont", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .outerm{
     width: 90%;
@@ -21,7 +21,7 @@
   }
   .option{
     margin: 20px;
-    font-family: "LuxuryFont", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     height: 60px;
     font-size: 1.5em;
   }
@@ -35,7 +35,7 @@
     text-align: center;
     margin-top: 20px;
     font-size: 3em;
-    font-family: "LuxuryFont", sans-serif; /* Specify your luxury font */
+    font-family: Arial, Helvetica, sans-serif; /* Specify your luxury font */
     margin-bottom: 10px;
   }
   .gridcontainer {
@@ -121,7 +121,7 @@
     }
     .option{
       margin: 20px;
-      font-family: "LuxuryFont", sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       height: 35px;
       font-size: 1em;
     }

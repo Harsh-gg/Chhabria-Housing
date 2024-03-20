@@ -13,10 +13,12 @@ export default function Jobform() {
     resume: null,
   });
 
+  const [submitting, setSubmitting] = useState(false); // State to track form submission
+
   const postUserData = (e) => {
     const { name, value } = e.target;
     if (name === 'resume') {
-      setUserData({ ...userData, [name]: e.target.files[0] }); // Access the first file from the files array
+      setUserData({ ...userData, [name]: e.target.files[0] });
     } else {
       setUserData({ ...userData, [name]: value.trim() });
     }
@@ -29,10 +31,10 @@ export default function Jobform() {
 
     if (name.trim() && email.trim() && phone.trim() && message.trim() && position) {
       try {
+        setSubmitting(true); // Set submitting state to true while form is being submitted
+
         const resumeRef = ref(storage, `Resumes/${resume.name}`);
         await uploadBytes(resumeRef, resume);
-
-        // Get the download URL using getDownloadURL function from storage
         const resumeUrl = await getDownloadURL(resumeRef);
 
         const res = await fetch(
@@ -67,11 +69,14 @@ export default function Jobform() {
       } catch (error) {
         console.error('Error uploading resume or submitting data:', error);
         alert('An error occurred. Please try again later.');
+      } finally {
+        setSubmitting(false); // Reset submitting state to false after form submission
       }
     } else {
       alert('Please fill all the fields');
     }
   };
+
   return (
     <>
       <div className={css.full}>
@@ -105,7 +110,7 @@ export default function Jobform() {
           <label htmlFor="resume" className={css.label2}>Upload Resume</label>
           <input type="file" id={css.resume} name="resume" onChange={postUserData} accept=".pdf,.doc,.docx" />
 
-          <button className={css.submit2} type="submit">Submit</button>
+          <button className={css.submit2} type="submit" disabled={submitting}>{submitting ? 'Please wait' : 'Submit'}</button>
         </form>
       </div>
     </>

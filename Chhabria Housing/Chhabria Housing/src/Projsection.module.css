@@ -24,7 +24,7 @@
     text-align: center;
     margin-top: 20px;
     font-size: 3em;
-    font-family: "LuxuryFont", sans-serif; /* Specify your luxury font */
+    font-family: Arial, Helvetica, sans-serif; /* Specify your luxury font */
     margin-bottom: 15px;
   }
   .gridcontainer {

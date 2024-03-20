@@ -67,7 +67,7 @@
 
 .title0 {
   color: #D2AB67;
-  font-family: "LuxuryFont", sans-serif; /* Specify your luxury font */
+  font-family: Arial, Helvetica, sans-serif; /* Specify your luxury font */
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -148,7 +148,7 @@ textarea.input0 {
   margin-right: 20px;
   margin-top: 10px;
   max-width: 100px;
-  font-family: "LuxuryFont", sans-serif; /* Specify your luxury font */
+  font-family: Arial, Helvetica, sans-serif; /* Specify your luxury font */
 }
 .btn0:hover {
   background-color: transparent;
@@ -284,6 +284,10 @@ textarea.input0 {
   .container0 {
     padding: 0;
   }
+  .contactinfo0 p{
+    font-size: 0.7rem;
+    line-break: 1rem;
+  }
   .contactinfo0{
     padding: 0;
   }
@@ -301,6 +305,7 @@ textarea.input0 {
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
+    height: 55px;
   }
   .contactinfo0 .text0 {
     display: none;

@@ -14,7 +14,6 @@ export default function Popup({ closePopup }) {
     name: "",
     email: "",
     phone: "",
-    message: "",
   });
 
   let name,value;
@@ -26,8 +25,8 @@ export default function Popup({ closePopup }) {
   
   const submitData = async (e) => {
     e.preventDefault();
-    const { name, email, phone, message } = userData;
-    if (name && email && phone && message) {
+    const { name, email, phone } = userData;
+    if (name && email && phone) {
       const res = await fetch(
         "https://chhabria-housing-default-rtdb.firebaseio.com/Enquiries.json",
         {
@@ -39,7 +38,6 @@ export default function Popup({ closePopup }) {
             name,
             email,
             phone,
-            message,
           }),
         }
       );
@@ -49,7 +47,6 @@ export default function Popup({ closePopup }) {
           name: "",
           email: "",
           phone: "",
-          message: "",
         });
         alert("Data Stored");
       }
@@ -99,9 +96,6 @@ Worli Office : B-15, 3rd Floor, Madhu Estate, Opp. Birla Niyaara, Nr. Lodha Park
                 </div>
                 <div className={css.inputcontainer0}>
                   <input type="tel" name="phone" className={css.input0} placeholder="Phone" value={userData.phone} onChange={postUserData}/>
-                </div>
-                <div className={css.inputcontainertextarea0}>
-                  <textarea name="message" className={css.input1} placeholder="Messasge" value={userData.message} onChange={postUserData}></textarea>
                 </div>
                 <div className={css.buttonss}>
                   <input type="submit" value="Send" className={css.btn0}  onClick={submitData}/>

@@ -7,7 +7,6 @@
 
 
 .name {
-  font-family: 'LuxuryFont', sans-serif;
   font-size: 1.5em;
   color: #d2ab67; /* Changed to lowercase for consistency */
   margin-bottom: 10px;
@@ -26,7 +25,6 @@
 }
 
 .testimonialcontain {
-  font-family: 'LuxuryFont', sans-serif;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -35,7 +33,6 @@
 }
 
 .mess {
-  font-family: 'LuxuryFont', sans-serif;
   line-height: 1.5em;
   font-weight: thin;
   margin-bottom: 10px;
@@ -44,7 +41,7 @@
 }
 
 .testimonialbox {
-  font-family: "LuxuryFont", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   width: calc(33.33% - 20px); /* Set each box to approximately one-third of the container width */
   padding: 20px;
   text-align: center;
@@ -65,13 +62,13 @@
   text-align: center;
   font-size: 5ex;
   color: #d2ab67; /* Changed to lowercase for consistency */
-  font-family: "LuxuryFont", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .head {
   text-align: center;
   color: #d2ab67; /* Changed to lowercase for consistency */
-  font-family: "LuxuryFont", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   margin: 10px;
 }
