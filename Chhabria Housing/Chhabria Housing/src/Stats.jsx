@@ -102,18 +102,25 @@ function Stats() {
         <div className={StatsCSS.containerr2}>
           <img src={image} alt="mumbai map"/>
         </div>
-        <div className={StatsCSS.containerr3}>
+        
+      </div>
+      </div>
+      <div className={StatsCSS.containerr3}>
           <h2>Places Of Operation</h2>
           <ul>
-            <li>Worli</li>
-            <li>Chembur</li>
-            <li>Bandra</li>
-            <li>Mahalaxmi</li>
-            <li>Lower Parel</li>
+          
+            <li> Juhu</li>
+            <li>&#x2022;</li>
+            <li>Church Gate</li>
+            <li>&#x2022;</li>
+            <li> Chembur</li>
+            <li>&#x2022;</li>
+            <li> Kanjurmarg</li>
+            <li>&#x2022;</li>
+            <li> Mulund</li>
+            
           </ul>
         </div>
-      </div>
-      </div>
     </>
   );
 }
