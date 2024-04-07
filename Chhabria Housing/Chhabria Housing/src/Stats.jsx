@@ -108,7 +108,6 @@ function Stats() {
       <div className={StatsCSS.containerr3}>
           <h2>Places Of Operation</h2>
           <ul>
-          
             <li> Juhu</li>
             <li>&#x2022;</li>
             <li>Church Gate</li>
@@ -118,7 +117,6 @@ function Stats() {
             <li> Kanjurmarg</li>
             <li>&#x2022;</li>
             <li> Mulund</li>
-            
           </ul>
         </div>
     </>

@@ -24,13 +24,13 @@ function Home() {
     document.body.style.overflow = "auto"; // Enable scrolling
   };
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      openPopup();
-    }, 0.3 * 60 * 1000); 
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     openPopup();
+  //   }, 0.3 * 60 * 1000); 
 
-    return () => clearInterval(intervalId);
-  }, []); 
+  //   return () => clearInterval(intervalId);
+  // }, []); 
 
   return (
     <>
