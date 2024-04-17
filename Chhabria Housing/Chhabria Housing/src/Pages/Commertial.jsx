@@ -24,7 +24,7 @@ function Commertial() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       openPopup();
-    }, 0.3 * 60 * 1000); // 2 minutes in milliseconds
+    }, 0.3 * 60 * 1000); // 30 sec in milliseconds
 
     // Clear interval on component unmount
     return () => clearInterval(intervalId);

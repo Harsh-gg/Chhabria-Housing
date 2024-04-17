@@ -10,6 +10,7 @@ import Aboutsec from '../Aboutsec.jsx';
 import '../App.css';
 import Foot from '../Footer.jsx';
 import Navbar from '../Navbar.jsx';
+import Listofplaces from '../Listofplaces.jsx';
 
 function Home() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -24,13 +25,13 @@ function Home() {
     document.body.style.overflow = "auto"; // Enable scrolling
   };
 
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     openPopup();
-  //   }, 0.3 * 60 * 1000); 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      openPopup();
+    }, 0.3 * 60 * 1000); 
 
-  //   return () => clearInterval(intervalId);
-  // }, []); 
+    return () => clearInterval(intervalId);
+  }, []); 
 
   return (
     <>
@@ -44,6 +45,7 @@ function Home() {
         <br/>
         <div id='about'><Aboutsec/></div>
         <Stats />
+        <Listofplaces />
         <div id='testimonials'><Testimonial/></div>
         {isPopupOpen && <Popup closePopup={closePopup} />}
         <Contact openPopup={openPopup}/>

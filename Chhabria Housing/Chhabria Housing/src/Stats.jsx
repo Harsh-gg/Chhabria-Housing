@@ -105,7 +105,7 @@ function Stats() {
         
       </div>
       </div>
-      <div className={StatsCSS.containerr3}>
+      {/* <div className={StatsCSS.containerr3}>
           <h2>Places Of Operation</h2>
           <ul>
             <li> Juhu</li>
@@ -118,7 +118,7 @@ function Stats() {
             <li>&#x2022;</li>
             <li> Mulund</li>
           </ul>
-        </div>
+        </div> */}
     </>
   );
 }

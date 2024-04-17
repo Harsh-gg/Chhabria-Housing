@@ -82,6 +82,7 @@
     .para{
         width: 100%;
         text-align: justify;
+        word-break: break-all;
     }
     .heading{
         width: 100%;
