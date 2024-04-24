@@ -1,44 +1,18 @@
-
-  .carouselcontainer {
-    overflow: hidden;
-    position: relative;
-    object-fit: none;
-    height: 200px; /* Adjust this height as needed */
-    width: 100%;
-    margin-bottom: 30px;
+  .special{
+    color: #2F4858;
+    font-weight: bold;
+    font-size: 1.1em;
   }
-  
   .head {
       color: #d2ab67; /* Golden font color */
       text-align: center;
       font-size: 3em; /* Adjust the font size as needed */
-      margin-bottom: 15px; 
+      margin-bottom: 45px; 
       font-family: 'Times New Roman', Times, serif; 
   }
-  .carouselcard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 110%;
-    height: 110%;
-    border-radius: 20%;
-    background: transparent;
-  }
-  .carouselitem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    height: 100%;
-    background: transparent;
-  }
-  .carouseltrack h1{
-    font-family: 'Times New Roman', Times, serif;
+  .carouselitem{
     font-size: 2em;
-    color: #d2ab67;
-  }
-  .Outer{
-    width: 100%;
+    color: #d2ab67; /* Golden font color */
   }
 
   @media (max-width: 425px) {
@@ -67,42 +41,14 @@
   @media (max-width: 768px) {
     .head{
       font-size: 2em; /* Adjust the font size as needed */
-      margin-top: -20%;
+      margin-top: 1%;
     }
-    .carouseltrack h1{
-        font-size: 1.5em;
-        width: 100%;
-    }
-    .carouseltrack {
-      width: 100%;
+    .carouselitem{
+      font-size: 1.5em;
+      color: #d2ab67; /* Golden font color */
     }
   }
   
-  .carouseltrack {
-    display: flex;
-    position: absolute;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Adjust this gap as needed */
-    width: 290%;
-    height: 100%;
-    animation: slide 20s linear infinite;
-  }
-  
-  @media (max-width: 425px) {
-    .carouseltrack {
-      width: 200%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .carouseltrack {
-      animation-duration: 10s; /* Adjust the duration for faster movement */
-      width: 620%;
-      height: 50%;
-    }
-  }
   @keyframes slide {
     0% {
       left: 0;
